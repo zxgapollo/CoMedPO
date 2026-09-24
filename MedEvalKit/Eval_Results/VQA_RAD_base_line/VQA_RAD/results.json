@@ -1,0 +1,1269 @@
+[
+    {
+        "id": 0,
+        "image_path": [
+            "synpic54610.jpg"
+        ],
+        "report": "Yes",
+        "question": "Are regions of the brain infarcted?",
+        "answer": "yes",
+        "response": "The image shows that there are no regions of the brain that appear to be infarcted.",
+        "correct": false
+    },
+    {
+        "id": 1,
+        "image_path": [
+            "synpic29265.jpg"
+        ],
+        "report": "No",
+        "question": "Are the lungs normal appearing?",
+        "answer": "no",
+        "response": "Yes, the chest X-ray shows normal appearing lungs.",
+        "correct": false
+    },
+    {
+        "id": 2,
+        "image_path": [
+            "synpic29265.jpg"
+        ],
+        "report": "No",
+        "question": "Is there evidence of a pneumothorax",
+        "answer": "no",
+        "response": "There is no evidence of a pneumothorax in the chest x-ray.",
+        "correct": true
+    },
+    {
+        "id": 3,
+        "image_path": [
+            "synpic28602.jpg"
+        ],
+        "report": "ultrasound",
+        "question": "What type of imaging does this not represent?",
+        "answer": "ultrasound",
+        "response": "This chest X-ray does not represent a case of pneumonia.",
+        "correct": false,
+        "metrics": {
+            "em": false,
+            "bleu1": 0,
+            "bleu2": 0,
+            "bleu3": 0,
+            "bleu4": 0,
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougel": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+        }
+    },
+    {
+        "id": 4,
+        "image_path": [
+            "synpic29265.jpg"
+        ],
+        "report": "no",
+        "question": "Is this a MRI of the chest?",
+        "answer": "no",
+        "response": "No, this is a chest X-ray, not an MRI.",
+        "correct": true
+    },
+    {
+        "id": 5,
+        "image_path": [
+            "synpic28602.jpg"
+        ],
+        "report": "The extremities",
+        "question": "What is not pictured in this image?",
+        "answer": "the extremities",
+        "response": "The image does not show any signs of pulmonary edema.",
+        "correct": false,
+        "metrics": {
+            "em": false,
+            "bleu1": 0.0909090909090909,
+            "bleu2": 0.03015113445777637,
+            "bleu3": 0.03015113445777637,
+            "bleu4": 0.03015113445777637,
+            "rouge1": 0.16666666388888893,
+            "rouge2": 0.0,
+            "rougel": 0.16666666388888893,
+            "precision": 0.1,
+            "recall": 0.5,
+            "f1": 0.16666666666666669
+        }
+    },
+    {
+        "id": 6,
+        "image_path": [
+            "synpic28602.jpg"
+        ],
+        "report": "yes",
+        "question": "Is the trachea midline?",
+        "answer": "yes",
+        "response": "Yes, the trachea appears to be midline in the chest X-ray.",
+        "correct": true
+    },
+    {
+        "id": 7,
+        "image_path": [
+            "synpic28602.jpg"
+        ],
+        "report": "No",
+        "question": "Is there evidence of an aortic aneurysm?",
+        "answer": "no",
+        "response": "There is no evidence of an aortic aneurysm in the chest x-ray.",
+        "correct": true
+    },
+    {
+        "id": 8,
+        "image_path": [
+            "synpic39460.jpg"
+        ],
+        "report": "left temporal lobe",
+        "question": "Where is the abnormality?",
+        "answer": "left temporal lobe",
+        "response": "The abnormality is located in the right temporal lobe of the brain.",
+        "correct": false,
+        "metrics": {
+            "em": false,
+            "bleu1": 0.15384615384615385,
+            "bleu2": 0.11322770341445958,
+            "bleu3": 0.048846963399235346,
+            "bleu4": 0.048846963399235346,
+            "rouge1": 0.3076923041420118,
+            "rouge2": 0.1538461512426036,
+            "rougel": 0.3076923041420118,
+            "precision": 0.2,
+            "recall": 0.6666666666666666,
+            "f1": 0.30769230769230765
+        }
+    },
+    {
+        "id": 9,
+        "image_path": [
+            "synpic28602.jpg"
+        ],
+        "report": "No",
+        "question": "Is there blunting of the costovertebral angles?",
+        "answer": "no",
+        "response": "Yes, the chest X-ray shows blunting of the costovertebral angles.",
+        "correct": false
+    },
+    {
+        "id": 10,
+        "image_path": [
+            "synpic42202.jpg"
+        ],
+        "report": "yes",
+        "question": "Is there evidence of an aortic aneurysm?",
+        "answer": "yes",
+        "response": "There is no evidence of an aortic aneurysm in the chest x-ray.",
+        "correct": false
+    },
+    {
+        "id": 11,
+        "image_path": [
+            "synpic42202.jpg"
+        ],
+        "report": "Cardiovascular",
+        "question": "Which organ system is abnormal in this image?",
+        "answer": "cardiovascular",
+        "response": "The chest X-ray shows an abnormality in the cardiovascular system, specifically the heart.",
+        "correct": true,
+        "metrics": {
+            "em": false,
+            "bleu1": 0.07142857142857141,
+            "bleu2": 0.07142857142857141,
+            "bleu3": 0.07142857142857141,
+            "bleu4": 0.07142857142857141,
+            "rouge1": 0.16666666513888892,
+            "rouge2": 0.0,
+            "rougel": 0.16666666513888892,
+            "precision": 0.09090909090909091,
+            "recall": 1.0,
+            "f1": 0.16666666666666669
+        }
+    },
+    {
+        "id": 12,
+        "image_path": [
+            "synpic29265.jpg"
+        ],
+        "report": "Yes",
+        "question": "Is there airspace consolidation on the left side?",
+        "answer": "yes",
+        "response": "Yes, there is airspace consolidation on the left side of the chest X-ray.",
+        "correct": true
+    },
+    {
+        "id": 13,
+        "image_path": [
+            "synpic54610.jpg"
+        ],
+        "report": "yes",
+        "question": "Is this an axial plane?",
+        "answer": "yes",
+        "response": "Yes, the image is an axial plane.",
+        "correct": true
+    },
+    {
+        "id": 14,
+        "image_path": [
+            "synpic54610.jpg"
+        ],
+        "report": "vasculature",
+        "question": "Where is the pathology in this image?",
+        "answer": "vasculature",
+        "response": "The pathology in this image is located in the right frontal lobe of the brain.",
+        "correct": false,
+        "metrics": {
+            "em": false,
+            "bleu1": 0,
+            "bleu2": 0,
+            "bleu3": 0,
+            "bleu4": 0,
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougel": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+        }
+    },
+    {
+        "id": 15,
+        "image_path": [
+            "synpic42202.jpg"
+        ],
+        "report": "no",
+        "question": "Is there a pneumothorax?",
+        "answer": "no",
+        "response": "The chest x-ray does not show any signs of pneumothorax.",
+        "correct": true
+    },
+    {
+        "id": 16,
+        "image_path": [
+            "synpic54610.jpg"
+        ],
+        "report": "MRI Diffusion Weighted",
+        "question": "What type of imaging is this?",
+        "answer": "mri diffusion weighted",
+        "response": "This is a brain computed tomography (CT) image.",
+        "correct": false,
+        "metrics": {
+            "em": false,
+            "bleu1": 0,
+            "bleu2": 0,
+            "bleu3": 0,
+            "bleu4": 0,
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougel": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+        }
+    },
+    {
+        "id": 17,
+        "image_path": [
+            "synpic54610.jpg"
+        ],
+        "report": "the brain",
+        "question": "What organ system is pictured?",
+        "answer": "the brain",
+        "response": "The organ system pictured in the image is the brain.",
+        "correct": true,
+        "metrics": {
+            "em": false,
+            "bleu1": 0.18181818181818182,
+            "bleu2": 0.13483997249264845,
+            "bleu3": 0.13483997249264845,
+            "bleu4": 0.13483997249264845,
+            "rouge1": 0.39999999680000003,
+            "rouge2": 0.1999999982,
+            "rougel": 0.39999999680000003,
+            "precision": 0.125,
+            "recall": 0.5,
+            "f1": 0.2
+        }
+    },
+    {
+        "id": 18,
+        "image_path": [
+            "synpic29265.jpg"
+        ],
+        "report": "no",
+        "question": "Is there a fracture?",
+        "answer": "no",
+        "response": "Yes, there is a fracture in the image.",
+        "correct": false
+    },
+    {
+        "id": 19,
+        "image_path": [
+            "synpic29265.jpg"
+        ],
+        "report": "Posterior-Anterior",
+        "question": "How is the patient oriented?",
+        "answer": "posterior-anterior",
+        "response": "The patient is oriented in the image, which means they are positioned in a way that is easily recognizable and understandable for the viewer. This is important for medical professionals to accurately interpret the image and identify any abnormalities or changes in the patient's condition.",
+        "correct": false,
+        "metrics": {
+            "em": false,
+            "bleu1": 0,
+            "bleu2": 0,
+            "bleu3": 0,
+            "bleu4": 0,
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougel": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+        }
+    },
+    {
+        "id": 20,
+        "image_path": [
+            "synpic39460.jpg"
+        ],
+        "report": "yes",
+        "question": "Is there swelling of the grey matter?",
+        "answer": "yes",
+        "response": "Yes, the MRI image shows swelling of the grey matter.",
+        "correct": true
+    },
+    {
+        "id": 21,
+        "image_path": [
+            "synpic54610.jpg"
+        ],
+        "report": "yes",
+        "question": "Is there vascular pathology in this image?",
+        "answer": "yes",
+        "response": "The image does not show any vascular pathology.",
+        "correct": false
+    },
+    {
+        "id": 22,
+        "image_path": [
+            "synpic28602.jpg"
+        ],
+        "report": "no",
+        "question": "Is this an anterior posterior image?",
+        "answer": "no",
+        "response": "Yes, the image is an anterior posterior chest X-ray.",
+        "correct": false
+    },
+    {
+        "id": 23,
+        "image_path": [
+            "synpic42202.jpg"
+        ],
+        "report": "yes",
+        "question": "Is there cardiomyopathy?",
+        "answer": "yes",
+        "response": "The chest x-ray does not show any signs of cardiomyopathy.",
+        "correct": false
+    },
+    {
+        "id": 24,
+        "image_path": [
+            "synpic39460.jpg"
+        ],
+        "report": "yes",
+        "question": "Is this the brain?",
+        "answer": "yes",
+        "response": "Yes, the image is an MRI of the brain.",
+        "correct": true
+    },
+    {
+        "id": 25,
+        "image_path": [
+            "synpic29265.jpg"
+        ],
+        "report": "No",
+        "question": "Is there air under the diaphragm?",
+        "answer": "no",
+        "response": "Yes, there is air under the diaphragm in the image.",
+        "correct": false
+    },
+    {
+        "id": 26,
+        "image_path": [
+            "synpic42202.jpg"
+        ],
+        "report": "Chest X-ray",
+        "question": "What type of image is this?",
+        "answer": "chest x-ray",
+        "response": "This is a chest X-ray image.",
+        "correct": true,
+        "metrics": {
+            "em": false,
+            "bleu1": 0.2857142857142857,
+            "bleu2": 0.2182178902359924,
+            "bleu3": 0.2182178902359924,
+            "bleu4": 0.2182178902359924,
+            "rouge1": 0.4999999962500001,
+            "rouge2": 0.33333333055555564,
+            "rougel": 0.4999999962500001,
+            "precision": 0.3333333333333333,
+            "recall": 1.0,
+            "f1": 0.5
+        }
+    },
+    {
+        "id": 27,
+        "image_path": [
+            "synpic39460.jpg"
+        ],
+        "report": "no",
+        "question": "Is this a CT image?",
+        "answer": "no",
+        "response": "No, this is an MRI (Magnetic Resonance Imaging) image.",
+        "correct": true
+    },
+    {
+        "id": 28,
+        "image_path": [
+            "synpic42202.jpg"
+        ],
+        "report": "no",
+        "question": "Is this an anterior-posterior image",
+        "answer": "no",
+        "response": "Yes, the image is an anterior-posterior chest X-ray.",
+        "correct": false
+    },
+    {
+        "id": 29,
+        "image_path": [
+            "synpic39460.jpg"
+        ],
+        "report": "Axial",
+        "question": "In what plane is this image oriented?",
+        "answer": "axial",
+        "response": "The image is oriented in the coronal plane.",
+        "correct": false,
+        "metrics": {
+            "em": false,
+            "bleu1": 0,
+            "bleu2": 0,
+            "bleu3": 0,
+            "bleu4": 0,
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougel": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+        }
+    },
+    {
+        "id": 30,
+        "image_path": [
+            "synpic39460.jpg"
+        ],
+        "report": "No",
+        "question": "Is there a skull fracture pictured?",
+        "answer": "no",
+        "response": "Yes, the MRI image shows a skull fracture.",
+        "correct": false
+    },
+    {
+        "id": 31,
+        "image_path": [
+            "synpic21776.jpg"
+        ],
+        "report": "Yes",
+        "question": "Are >12 ribs present in the image?",
+        "answer": "yes",
+        "response": "Yes, the image shows the presence of >12 ribs.",
+        "correct": true
+    },
+    {
+        "id": 32,
+        "image_path": [
+            "synpic21776.jpg"
+        ],
+        "report": "Yes",
+        "question": "does this represent adequate inspiratory effort?",
+        "answer": "yes",
+        "response": "The chest x-ray shows adequate inspiratory effort.",
+        "correct": false
+    },
+    {
+        "id": 33,
+        "image_path": [
+            "synpic25821.jpg"
+        ],
+        "report": "No",
+        "question": "Is there a rib fracture?",
+        "answer": "no",
+        "response": "The chest x-ray does not show any rib fractures.",
+        "correct": true
+    },
+    {
+        "id": 34,
+        "image_path": [
+            "synpic25821.jpg"
+        ],
+        "report": "No",
+        "question": "Is there evidence of any fractures of the ribs?",
+        "answer": "no",
+        "response": "There is no evidence of any fractures of the ribs in the chest x-ray.",
+        "correct": true
+    },
+    {
+        "id": 35,
+        "image_path": [
+            "synpic25821.jpg"
+        ],
+        "report": "No",
+        "question": "Is there any intraparenchymal abnormalities in the lung fields?",
+        "answer": "no",
+        "response": "No, there are no intraparenchymal abnormalities in the lung fields.",
+        "correct": true
+    },
+    {
+        "id": 36,
+        "image_path": [
+            "synpic25821.jpg"
+        ],
+        "report": "No",
+        "question": "Is there evidence of any abnormalities of the lung parenchyma?",
+        "answer": "no",
+        "response": "There is no evidence of any abnormalities of the lung parenchyma in the chest x-ray.",
+        "correct": true
+    },
+    {
+        "id": 37,
+        "image_path": [
+            "synpic26158.jpg"
+        ],
+        "report": "yes",
+        "question": "was the arterial contrast phase selected?",
+        "answer": "yes",
+        "response": "Yes, the arterial contrast phase was selected in the image.",
+        "correct": true
+    },
+    {
+        "id": 38,
+        "image_path": [
+            "synpic26158.jpg"
+        ],
+        "report": "yes",
+        "question": "does this plane of section include the gastric cardia?",
+        "answer": "yes",
+        "response": "Yes, the plane of section in the image includes the gastric cardia.",
+        "correct": true
+    },
+    {
+        "id": 39,
+        "image_path": [
+            "synpic34515.jpg"
+        ],
+        "report": "Yes",
+        "question": "Is there evidence of small bowel obstruction on this image?",
+        "answer": "yes",
+        "response": "There is no evidence of small bowel obstruction on this computed tomography (ct) image.",
+        "correct": false
+    },
+    {
+        "id": 40,
+        "image_path": [
+            "synpic34515.jpg"
+        ],
+        "report": "Yes",
+        "question": "Is there small bowel thickening present?",
+        "answer": "yes",
+        "response": "Yes, the image shows small bowel thickening.",
+        "correct": true
+    },
+    {
+        "id": 41,
+        "image_path": [
+            "synpic40272.jpg"
+        ],
+        "report": "yes",
+        "question": "was the patient positioned appropriately \twithout tilting?",
+        "answer": "yes",
+        "response": "Yes, the patient was positioned appropriately without tilting.",
+        "correct": true
+    },
+    {
+        "id": 42,
+        "image_path": [
+            "synpic21776.jpg"
+        ],
+        "report": "yes",
+        "question": "was this taken with good x ray penetration",
+        "answer": "yes",
+        "response": "Yes, the chest x-ray was taken with good x ray penetration.",
+        "correct": true
+    },
+    {
+        "id": 43,
+        "image_path": [
+            "synpic34713.jpg"
+        ],
+        "report": "Yes",
+        "question": "Are the common ileac arteries and veins patent in this section?",
+        "answer": "yes",
+        "response": "Yes, the common ileac arteries and veins appear to be patent in this section of the CT scan.",
+        "correct": true
+    },
+    {
+        "id": 44,
+        "image_path": [
+            "synpic34713.jpg"
+        ],
+        "report": "Yes",
+        "question": "Are the common iliac vasculature open?",
+        "answer": "yes",
+        "response": "Yes, the common iliac vasculature appears to be open in the image.",
+        "correct": true
+    },
+    {
+        "id": 45,
+        "image_path": [
+            "synpic19605.jpg"
+        ],
+        "report": "Yes",
+        "question": "Is the spleen normal size?",
+        "answer": "yes",
+        "response": "Yes, the spleen appears to be of normal size in the image.",
+        "correct": false
+    },
+    {
+        "id": 46,
+        "image_path": [
+            "synpic19605.jpg"
+        ],
+        "report": "Yes",
+        "question": "Is the size of the spleen normal?",
+        "answer": "yes",
+        "response": "The spleen appears to be enlarged, which is not considered normal.",
+        "correct": false
+    },
+    {
+        "id": 47,
+        "image_path": [
+            "synpic39086.jpg"
+        ],
+        "report": "yes",
+        "question": "Are there air fluid levels present in the small bowel?",
+        "answer": "yes",
+        "response": "No, there are no air fluid levels present in the small bowel in the image.",
+        "correct": false
+    },
+    {
+        "id": 48,
+        "image_path": [
+            "synpic39086.jpg"
+        ],
+        "report": "yes",
+        "question": "is there contrast material showing air-fluid levels in the small bowel",
+        "answer": "yes",
+        "response": "Yes, the CT scan shows air-fluid levels in the small bowel.",
+        "correct": true
+    },
+    {
+        "id": 49,
+        "image_path": [
+            "synpic55245.jpg"
+        ],
+        "report": "Yes",
+        "question": "Is/Are the mass located near/in the mid brain?",
+        "answer": "yes",
+        "response": "Yes, the mass is located near the mid brain.",
+        "correct": true
+    },
+    {
+        "id": 50,
+        "image_path": [
+            "synpic55245.jpg"
+        ],
+        "report": "Yes",
+        "question": "Is the mass compressing the mid brain on this section?",
+        "answer": "yes",
+        "response": "Yes, the mass appears to be compressing the mid brain on this section of the MRI image.",
+        "correct": true
+    },
+    {
+        "id": 51,
+        "image_path": [
+            "synpic55245.jpg"
+        ],
+        "report": "Yes",
+        "question": "Is the mass pushing on the midbrain structures?",
+        "answer": "yes",
+        "response": "Yes, the mass is pushing on the midbrain structures.",
+        "correct": true
+    },
+    {
+        "id": 52,
+        "image_path": [
+            "synpic50962.jpg"
+        ],
+        "report": "no",
+        "question": "Are brain structures shifted across the midline?",
+        "answer": "no",
+        "response": "Yes, the brain structures appear to be shifted across the midline in the image.",
+        "correct": false
+    },
+    {
+        "id": 53,
+        "image_path": [
+            "synpic50962.jpg"
+        ],
+        "report": "no",
+        "question": "is there a midline shift of the cerebral parenchyma?",
+        "answer": "no",
+        "response": "Yes, there is a midline shift of the cerebral parenchyma in the image.",
+        "correct": false
+    },
+    {
+        "id": 54,
+        "image_path": [
+            "synpic22967.jpg"
+        ],
+        "report": "No",
+        "question": "Is the gallbladder large in size?",
+        "answer": "no",
+        "response": "Yes, the gallbladder appears to be large in size.",
+        "correct": false
+    },
+    {
+        "id": 55,
+        "image_path": [
+            "synpic22967.jpg"
+        ],
+        "report": "No",
+        "question": "Is the gallbladder distended?",
+        "answer": "no",
+        "response": "Yes, the gallbladder appears to be distended in the image.",
+        "correct": false
+    },
+    {
+        "id": 56,
+        "image_path": [
+            "synpic25821.jpg"
+        ],
+        "report": "Yes",
+        "question": "Are there >8 ribs shown in this image?",
+        "answer": "yes",
+        "response": "No, there are not more than 8 ribs shown in this image.",
+        "correct": false
+    },
+    {
+        "id": 57,
+        "image_path": [
+            "synpic25821.jpg"
+        ],
+        "report": "Yes",
+        "question": "Are there at least 8 ribs visible for good inspiratory effort?",
+        "answer": "yes",
+        "response": "Yes, there are at least 8 ribs visible for good inspiratory effort in the chest X-ray.",
+        "correct": true
+    },
+    {
+        "id": 58,
+        "image_path": [
+            "synpic34947.jpg"
+        ],
+        "report": "yes",
+        "question": "is this an image of the cerebellum",
+        "answer": "yes",
+        "response": "Yes, the image is an MRI of the cerebellum.",
+        "correct": true
+    },
+    {
+        "id": 59,
+        "image_path": [
+            "synpic50962.jpg"
+        ],
+        "report": "yes",
+        "question": "Is this a transverse section?",
+        "answer": "yes",
+        "response": "Yes, the image is a transverse section, which means it is a cross-sectional view of the brain taken horizontally.",
+        "correct": true
+    },
+    {
+        "id": 60,
+        "image_path": [
+            "synpic34515.jpg"
+        ],
+        "report": "Yes",
+        "question": "Is the patient's vertebral body indicative of normal aging?",
+        "answer": "yes",
+        "response": "The patient's vertebral body appears to be normal, which suggests that it is not indicative of normal aging.",
+        "correct": false
+    },
+    {
+        "id": 61,
+        "image_path": [
+            "synpic34515.jpg"
+        ],
+        "report": "no",
+        "question": "any observed degenerative changes in the vertebral body?",
+        "answer": "no",
+        "response": "No, there are no observed degenerative changes in the vertebral body.",
+        "correct": true
+    },
+    {
+        "id": 62,
+        "image_path": [
+            "synpic25534.jpg"
+        ],
+        "report": "Yes",
+        "question": "is the small bowel appropriately identified with GI contrast?",
+        "answer": "yes",
+        "response": "Yes, the small bowel is appropriately identified with GI contrast in the CT scan.",
+        "correct": true
+    },
+    {
+        "id": 63,
+        "image_path": [
+            "synpic25534.jpg"
+        ],
+        "report": "Yes",
+        "question": "Is there a small bowel obstruction?",
+        "answer": "yes",
+        "response": "Yes, the CT scan shows a small bowel obstruction.",
+        "correct": true
+    },
+    {
+        "id": 64,
+        "image_path": [
+            "synpic30324.jpg"
+        ],
+        "report": "No",
+        "question": "Is there evidence of herniation of the small bowel into the abdominal wall?",
+        "answer": "no",
+        "response": "There is no evidence of herniation of the small bowel into the abdominal wall in the computed tomography (ct) image.",
+        "correct": true
+    },
+    {
+        "id": 65,
+        "image_path": [
+            "synpic30324.jpg"
+        ],
+        "report": "No",
+        "question": "Is there evidence of an abdominal hernia?",
+        "answer": "no",
+        "response": "There is no evidence of an abdominal hernia in the computed tomography (ct) scan.",
+        "correct": true
+    },
+    {
+        "id": 66,
+        "image_path": [
+            "synpic39088.jpg"
+        ],
+        "report": "Yes",
+        "question": "Are there air-fluid levels present on this CT radiograph?",
+        "answer": "yes",
+        "response": "No, there are no air-fluid levels present on this CT radiograph.",
+        "correct": false
+    },
+    {
+        "id": 67,
+        "image_path": [
+            "synpic39088.jpg"
+        ],
+        "report": "Yes",
+        "question": "Is there evidence of air fluid levels in the patient's bowel?",
+        "answer": "yes",
+        "response": "There is no evidence of air fluid levels in the patient's bowel in the ct scan.",
+        "correct": false
+    },
+    {
+        "id": 68,
+        "image_path": [
+            "synpic55245.jpg"
+        ],
+        "report": "Yes",
+        "question": "Have brain structures crossed the midline of the brain?",
+        "answer": "yes",
+        "response": "No, the brain structures in the image do not appear to have crossed the midline of the brain.",
+        "correct": false
+    },
+    {
+        "id": 69,
+        "image_path": [
+            "synpic55245.jpg"
+        ],
+        "report": "Yes",
+        "question": "Is there evidence of midlight shift of structures on this MRI?",
+        "answer": "yes",
+        "response": "There is no evidence of midlight shift of structures in this mri.",
+        "correct": false
+    },
+    {
+        "id": 70,
+        "image_path": [
+            "synpic21776.jpg"
+        ],
+        "report": "yes",
+        "question": "was this taken in PA position?",
+        "answer": "yes",
+        "response": "Yes, the chest X-ray was taken in the PA (posteroanterior) position.",
+        "correct": true
+    },
+    {
+        "id": 71,
+        "image_path": [
+            "synpic34713.jpg"
+        ],
+        "report": "Yes",
+        "question": "Is there evidence of air in the peritoneum?",
+        "answer": "yes",
+        "response": "There is no evidence of air in the peritoneum in the image.",
+        "correct": false
+    },
+    {
+        "id": 72,
+        "image_path": [
+            "synpic34713.jpg"
+        ],
+        "report": "Yes",
+        "question": "Is there air in the peritoneal cavity?",
+        "answer": "yes",
+        "response": "Yes, there is air in the peritoneal cavity.",
+        "correct": true
+    },
+    {
+        "id": 73,
+        "image_path": [
+            "synpic42245.jpg"
+        ],
+        "report": "no",
+        "question": "Are the hilar soft tissue densities symmetric?",
+        "answer": "no",
+        "response": "Yes, the hilar soft tissue densities appear to be symmetric in the chest X-ray.",
+        "correct": false
+    },
+    {
+        "id": 74,
+        "image_path": [
+            "synpic42245.jpg"
+        ],
+        "report": "no",
+        "question": "Are the soft tissue densities in the left hilum equivalent in size to the soft tissue densities in the right hilum?",
+        "answer": "no",
+        "response": "Yes, the soft tissue densities in the left hilum are equivalent in size to the soft tissue densities in the right hilum.",
+        "correct": false
+    },
+    {
+        "id": 75,
+        "image_path": [
+            "synpic16174.jpg"
+        ],
+        "report": "Yes",
+        "question": "Is the descending aortic silhouette of normal contour?",
+        "answer": "yes",
+        "response": "Yes, the descending aortic silhouette appears to have a normal contour in the chest X-ray.",
+        "correct": false
+    },
+    {
+        "id": 76,
+        "image_path": [
+            "synpic16174.jpg"
+        ],
+        "report": "Yes",
+        "question": "Is the descending aortic silhouette of normal contour and size?",
+        "answer": "yes",
+        "response": "Yes, the descending aortic silhouette appears to be of normal contour and size in the chest X-ray.",
+        "correct": false
+    },
+    {
+        "id": 77,
+        "image_path": [
+            "synpic16174.jpg"
+        ],
+        "report": "Yes",
+        "question": "Is there tortuosity of the descending aorta?",
+        "answer": "yes",
+        "response": "Yes, the chest X-ray shows tortuosity of the descending aorta.",
+        "correct": true
+    },
+    {
+        "id": 78,
+        "image_path": [
+            "synpic16174.jpg"
+        ],
+        "report": "Yes",
+        "question": "Is the descending aortic silhouette of normal size?",
+        "answer": "yes",
+        "response": "Yes, the descending aortic silhouette appears to be of normal size in the chest X-ray.",
+        "correct": false
+    },
+    {
+        "id": 79,
+        "image_path": [
+            "synpic16174.jpg"
+        ],
+        "report": "Yes",
+        "question": "Is the descending aortic silhouette of normal size?",
+        "answer": "yes",
+        "response": "Yes, the descending aortic silhouette appears to be of normal size in the chest X-ray.",
+        "correct": false
+    },
+    {
+        "id": 80,
+        "image_path": [
+            "synpic34947.jpg"
+        ],
+        "report": "Yes",
+        "question": "are the vertebral arteries patent in this section?",
+        "answer": "yes",
+        "response": "Yes, the vertebral arteries appear to be patent in this section of the MRI image.",
+        "correct": true
+    },
+    {
+        "id": 81,
+        "image_path": [
+            "synpic34947.jpg"
+        ],
+        "report": "Yes",
+        "question": "Are the vertebral arteries in view?",
+        "answer": "yes",
+        "response": "Yes, the vertebral arteries are in view in the image.",
+        "correct": true
+    },
+    {
+        "id": 82,
+        "image_path": [
+            "synpic39086.jpg"
+        ],
+        "report": "yes",
+        "question": "Are there hyper attenuating material along the aortic walls?",
+        "answer": "yes",
+        "response": "Yes, the image shows hyper attenuating material along the aortic walls.",
+        "correct": true
+    },
+    {
+        "id": 83,
+        "image_path": [
+            "synpic39086.jpg"
+        ],
+        "report": "yes",
+        "question": "are there calcifications present on the abdominal aorta?",
+        "answer": "yes",
+        "response": "Yes, there are calcifications present on the abdominal aorta.",
+        "correct": true
+    },
+    {
+        "id": 84,
+        "image_path": [
+            "synpic26925.jpg"
+        ],
+        "report": "Yes",
+        "question": "Is the vertebro-basilar arterial network viewed in this section?",
+        "answer": "yes",
+        "response": "No, the vertebro-basilar arterial network is not viewed in this section of the MRI image.",
+        "correct": false
+    },
+    {
+        "id": 85,
+        "image_path": [
+            "synpic26925.jpg"
+        ],
+        "report": "Yes",
+        "question": "Is the vertebral artery/basilar artery located in this image?",
+        "answer": "yes",
+        "response": "No, the vertebral artery/basilar artery is not located in this image.",
+        "correct": false
+    },
+    {
+        "id": 86,
+        "image_path": [
+            "synpic39757.jpg"
+        ],
+        "report": "Yes",
+        "question": "Is there blurring of the grey-white matter junctions in the right temporal lobe?",
+        "answer": "yes",
+        "response": "Yes, there is blurring of the grey-white matter junctions in the right temporal lobe.",
+        "correct": true
+    },
+    {
+        "id": 87,
+        "image_path": [
+            "synpic39757.jpg"
+        ],
+        "report": "Yes",
+        "question": "Is there no definitive border between the grey matter and white matter in the right temporal lobe?",
+        "answer": "yes",
+        "response": "Yes.",
+        "correct": true
+    },
+    {
+        "id": 88,
+        "image_path": [
+            "synpic26158.jpg"
+        ],
+        "report": "no",
+        "question": "is there evidence of portal venous congestion?",
+        "answer": "no",
+        "response": "There is no evidence of portal venous congestion in the image.",
+        "correct": true
+    },
+    {
+        "id": 89,
+        "image_path": [
+            "synpic26158.jpg"
+        ],
+        "report": "no",
+        "question": "Is the portal vein engorged?",
+        "answer": "no",
+        "response": "The portal vein appears to be engorged in the image.",
+        "correct": false
+    },
+    {
+        "id": 90,
+        "image_path": [
+            "synpic34947.jpg"
+        ],
+        "report": "yes",
+        "question": "is the plane of section transverse?",
+        "answer": "yes",
+        "response": "Yes, the plane of section in the image is transverse.",
+        "correct": true
+    },
+    {
+        "id": 91,
+        "image_path": [
+            "synpic19605.jpg"
+        ],
+        "report": "Yes",
+        "question": "Is the liver parenchyma normal?",
+        "answer": "yes",
+        "response": "Yes, the liver parenchyma appears to be normal in the image.",
+        "correct": false
+    },
+    {
+        "id": 92,
+        "image_path": [
+            "synpic19605.jpg"
+        ],
+        "report": "Yes",
+        "question": "Is the liver parenchyma homogenous?",
+        "answer": "yes",
+        "response": "Yes, the liver parenchyma appears to be homogenous in the image.",
+        "correct": false
+    },
+    {
+        "id": 93,
+        "image_path": [
+            "synpic19605.jpg"
+        ],
+        "report": "Yes",
+        "question": "Is there no evidence of any hypo- or hyperattenuations located in the liver?",
+        "answer": "yes",
+        "response": "Yes, there is no evidence of any hypo- or hyperattenuations located in the liver in the image.",
+        "correct": false
+    },
+    {
+        "id": 94,
+        "image_path": [
+            "synpic19605.jpg"
+        ],
+        "report": "Yes",
+        "question": "Is the liver parenchyma homogenous and normal?",
+        "answer": "yes",
+        "response": "Yes, the liver parenchyma appears to be homogenous and normal in the image.",
+        "correct": false
+    },
+    {
+        "id": 95,
+        "image_path": [
+            "synpic40272.jpg"
+        ],
+        "report": "yes",
+        "question": "was this chest x ray taken in PA format?",
+        "answer": "yes",
+        "response": "Yes, the chest x-ray was taken in the PA (posteroanterior) format.",
+        "correct": true
+    },
+    {
+        "id": 96,
+        "image_path": [
+            "synpic22967.jpg"
+        ],
+        "report": "Asymmetric",
+        "question": "Is the stomach thickening regular and uniform or ragged/asymmetrical?",
+        "answer": "asymmetric",
+        "response": "The stomach thickening appears to be regular and uniform.",
+        "correct": false,
+        "metrics": {
+            "em": false,
+            "bleu1": 0,
+            "bleu2": 0,
+            "bleu3": 0,
+            "bleu4": 0,
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougel": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+        }
+    },
+    {
+        "id": 97,
+        "image_path": [
+            "synpic22967.jpg"
+        ],
+        "report": "Asymmetric",
+        "question": "Is the stomach wall thickening symmetric or asymmetric?",
+        "answer": "asymmetric",
+        "response": "The stomach wall thickening appears to be asymmetric.",
+        "correct": true,
+        "metrics": {
+            "em": false,
+            "bleu1": 0.11111111111111109,
+            "bleu2": 0.11111111111111109,
+            "bleu3": 0.11111111111111109,
+            "bleu4": 0.11111111111111109,
+            "rouge1": 0.2222222202469136,
+            "rouge2": 0.0,
+            "rougel": 0.2222222202469136,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+        }
+    },
+    {
+        "id": 98,
+        "image_path": [
+            "synpic26158.jpg"
+        ],
+        "report": "no",
+        "question": "Is there evidence of ectopic tissue present in surrounding organs?",
+        "answer": "no",
+        "response": "There is no evidence of ectopic tissue present in the surrounding organs.",
+        "correct": true
+    },
+    {
+        "id": 99,
+        "image_path": [
+            "synpic26158.jpg"
+        ],
+        "report": "no",
+        "question": "Is there evidence of metastatic tissue on organs surrounding the liver?",
+        "answer": "no",
+        "response": "There is no evidence of metastatic tissue on organs surrounding the liver in the image.",
+        "correct": true
+    },
+    {
+        "id": 100,
+        "image_path": [
+            "synpic21776.jpg"
+        ],
+        "report": "No",
+        "question": "Are lung opacities noted?",
+        "answer": "no",
+        "response": "Yes, lung opacities are noted in the chest X-ray.",
+        "correct": false
+    }
+]

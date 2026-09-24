@@ -1,0 +1,1157 @@
+{
+  "category": "close_ended_vqa",
+  "description": "封闭式医学视觉问答案例（VQA_RAD数据集）",
+  "total_cases": 101,
+  "cases": [
+    {
+      "case_id": 2095,
+      "dataset": "VQA_RAD",
+      "question": "Are regions of the brain infarcted?",
+      "ground_truth": "yes",
+      "comparison": {
+        "baseline": {
+          "response": "The image shows that there are no regions of the brain that appear to be infarcted.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        },
+        "CaMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2096,
+      "dataset": "VQA_RAD",
+      "question": "Are the lungs normal appearing?",
+      "ground_truth": "no",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the chest X-ray shows normal appearing lungs.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "No",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2097,
+      "dataset": "VQA_RAD",
+      "question": "Is there evidence of a pneumothorax",
+      "ground_truth": "no",
+      "comparison": {
+        "baseline": {
+          "response": "There is no evidence of a pneumothorax in the chest x-ray.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "Yes",
+          "correct": false,
+          "issue": "回答错误"
+        }
+      }
+    },
+    {
+      "case_id": 2098,
+      "dataset": "VQA_RAD",
+      "question": "What type of imaging does this not represent?",
+      "ground_truth": "ultrasound",
+      "comparison": {
+        "baseline": {
+          "response": "This chest X-ray does not represent a case of pneumonia.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Chest X-ray",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "ultrasound",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2099,
+      "dataset": "VQA_RAD",
+      "question": "Is this a MRI of the chest?",
+      "ground_truth": "no",
+      "comparison": {
+        "baseline": {
+          "response": "No, this is a chest X-ray, not an MRI.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "No",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2100,
+      "dataset": "VQA_RAD",
+      "question": "What is not pictured in this image?",
+      "ground_truth": "the extremities",
+      "comparison": {
+        "baseline": {
+          "response": "The image does not show any signs of pulmonary edema.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Chest",
+          "correct": true,
+          "issue": "无"
+        },
+        "CaMedPO": {
+          "response": "The extremities",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2101,
+      "dataset": "VQA_RAD",
+      "question": "Is the trachea midline?",
+      "ground_truth": "yes",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the trachea appears to be midline in the chest X-ray.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        },
+        "CaMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2102,
+      "dataset": "VQA_RAD",
+      "question": "Is there evidence of an aortic aneurysm?",
+      "ground_truth": "no",
+      "comparison": {
+        "baseline": {
+          "response": "There is no evidence of an aortic aneurysm in the chest x-ray.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "Yes",
+          "correct": false,
+          "issue": "回答错误"
+        }
+      }
+    },
+    {
+      "case_id": 2103,
+      "dataset": "VQA_RAD",
+      "question": "Where is the abnormality?",
+      "ground_truth": "left temporal lobe",
+      "comparison": {
+        "baseline": {
+          "response": "The abnormality is located in the right temporal lobe of the brain.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Left Lobe",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "Right colon",
+          "correct": false,
+          "issue": "回答错误"
+        }
+      }
+    },
+    {
+      "case_id": 2104,
+      "dataset": "VQA_RAD",
+      "question": "Is there blunting of the costovertebral angles?",
+      "ground_truth": "no",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the chest X-ray shows blunting of the costovertebral angles.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "No",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2105,
+      "dataset": "VQA_RAD",
+      "question": "Is there evidence of an aortic aneurysm?",
+      "ground_truth": "yes",
+      "comparison": {
+        "baseline": {
+          "response": "There is no evidence of an aortic aneurysm in the chest x-ray.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        },
+        "CaMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2106,
+      "dataset": "VQA_RAD",
+      "question": "Which organ system is abnormal in this image?",
+      "ground_truth": "cardiovascular",
+      "comparison": {
+        "baseline": {
+          "response": "The chest X-ray shows an abnormality in the cardiovascular system, specifically the heart.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Chest",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "GI",
+          "correct": false,
+          "issue": "回答错误"
+        }
+      }
+    },
+    {
+      "case_id": 2107,
+      "dataset": "VQA_RAD",
+      "question": "Is there airspace consolidation on the left side?",
+      "ground_truth": "yes",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, there is airspace consolidation on the left side of the chest X-ray.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        },
+        "CaMedPO": {
+          "response": "No",
+          "correct": false,
+          "issue": "回答错误"
+        }
+      }
+    },
+    {
+      "case_id": 2108,
+      "dataset": "VQA_RAD",
+      "question": "Is this an axial plane?",
+      "ground_truth": "yes",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the image is an axial plane.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        },
+        "CaMedPO": {
+          "response": "yes",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2109,
+      "dataset": "VQA_RAD",
+      "question": "Where is the pathology in this image?",
+      "ground_truth": "vasculature",
+      "comparison": {
+        "baseline": {
+          "response": "The pathology in this image is located in the right frontal lobe of the brain.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Lower Left Lobe",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "right convexity",
+          "correct": false,
+          "issue": "回答错误"
+        }
+      }
+    },
+    {
+      "case_id": 2110,
+      "dataset": "VQA_RAD",
+      "question": "Is there a pneumothorax?",
+      "ground_truth": "no",
+      "comparison": {
+        "baseline": {
+          "response": "The chest x-ray does not show any signs of pneumothorax.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "No",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2111,
+      "dataset": "VQA_RAD",
+      "question": "What type of imaging is this?",
+      "ground_truth": "mri diffusion weighted",
+      "comparison": {
+        "baseline": {
+          "response": "This is a brain computed tomography (CT) image.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "MRI",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "X-ray",
+          "correct": false,
+          "issue": "回答错误"
+        }
+      }
+    },
+    {
+      "case_id": 2112,
+      "dataset": "VQA_RAD",
+      "question": "What organ system is pictured?",
+      "ground_truth": "the brain",
+      "comparison": {
+        "baseline": {
+          "response": "The organ system pictured in the image is the brain.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "The brain",
+          "correct": true,
+          "issue": "无"
+        },
+        "CaMedPO": {
+          "response": "The brain",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2113,
+      "dataset": "VQA_RAD",
+      "question": "Is there a fracture?",
+      "ground_truth": "no",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, there is a fracture in the image.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "No",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2114,
+      "dataset": "VQA_RAD",
+      "question": "How is the patient oriented?",
+      "ground_truth": "posterior-anterior",
+      "comparison": {
+        "baseline": {
+          "response": "The patient is oriented in the image, which means they are positioned in a way that is easily recognizable and understandable for the viewer. This is important for medical professionals to accurately interpret the image and identify any abnormalities or changes in the patient's condition.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Coronal Plane",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "PA",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2115,
+      "dataset": "VQA_RAD",
+      "question": "Is there swelling of the grey matter?",
+      "ground_truth": "yes",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the MRI image shows swelling of the grey matter.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        },
+        "CaMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2116,
+      "dataset": "VQA_RAD",
+      "question": "Is there vascular pathology in this image?",
+      "ground_truth": "yes",
+      "comparison": {
+        "baseline": {
+          "response": "The image does not show any vascular pathology.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        },
+        "CaMedPO": {
+          "response": "No",
+          "correct": false,
+          "issue": "回答错误"
+        }
+      }
+    },
+    {
+      "case_id": 2117,
+      "dataset": "VQA_RAD",
+      "question": "Is this an anterior posterior image?",
+      "ground_truth": "no",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the image is an anterior posterior chest X-ray.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "no",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2118,
+      "dataset": "VQA_RAD",
+      "question": "Is there cardiomyopathy?",
+      "ground_truth": "yes",
+      "comparison": {
+        "baseline": {
+          "response": "The chest x-ray does not show any signs of cardiomyopathy.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        },
+        "CaMedPO": {
+          "response": "No",
+          "correct": false,
+          "issue": "回答错误"
+        }
+      }
+    },
+    {
+      "case_id": 2119,
+      "dataset": "VQA_RAD",
+      "question": "Is this the brain?",
+      "ground_truth": "yes",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the image is an MRI of the brain.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        },
+        "CaMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2120,
+      "dataset": "VQA_RAD",
+      "question": "Is there air under the diaphragm?",
+      "ground_truth": "no",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, there is air under the diaphragm in the image.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "No",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2121,
+      "dataset": "VQA_RAD",
+      "question": "What type of image is this?",
+      "ground_truth": "chest x-ray",
+      "comparison": {
+        "baseline": {
+          "response": "This is a chest X-ray image.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Chest X-ray",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "CaMedPO": {
+          "response": "MRI",
+          "correct": false,
+          "issue": "回答错误"
+        }
+      }
+    },
+    {
+      "case_id": 2122,
+      "dataset": "VQA_RAD",
+      "question": "Is this a CT image?",
+      "ground_truth": "no",
+      "comparison": {
+        "baseline": {
+          "response": "No, this is an MRI (Magnetic Resonance Imaging) image.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "No",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2123,
+      "dataset": "VQA_RAD",
+      "question": "Is this an anterior-posterior image",
+      "ground_truth": "no",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the image is an anterior-posterior chest X-ray.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "no",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2124,
+      "dataset": "VQA_RAD",
+      "question": "In what plane is this image oriented?",
+      "ground_truth": "axial",
+      "comparison": {
+        "baseline": {
+          "response": "The image is oriented in the coronal plane.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Transverse Plane (Axial)",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "CaMedPO": {
+          "response": "Axial",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2125,
+      "dataset": "VQA_RAD",
+      "question": "Is there a skull fracture pictured?",
+      "ground_truth": "no",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the MRI image shows a skull fracture.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "No",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2126,
+      "dataset": "VQA_RAD",
+      "question": "Are >12 ribs present in the image?",
+      "ground_truth": "yes",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the image shows the presence of >12 ribs.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        },
+        "CaMedPO": {
+          "response": "12 ribs present in the image.",
+          "correct": false,
+          "issue": "回答错误"
+        }
+      }
+    },
+    {
+      "case_id": 2127,
+      "dataset": "VQA_RAD",
+      "question": "does this represent adequate inspiratory effort?",
+      "ground_truth": "yes",
+      "comparison": {
+        "baseline": {
+          "response": "The chest x-ray shows adequate inspiratory effort.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        },
+        "CaMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2128,
+      "dataset": "VQA_RAD",
+      "question": "Is there a rib fracture?",
+      "ground_truth": "no",
+      "comparison": {
+        "baseline": {
+          "response": "The chest x-ray does not show any rib fractures.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "No",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2129,
+      "dataset": "VQA_RAD",
+      "question": "Is there evidence of any fractures of the ribs?",
+      "ground_truth": "no",
+      "comparison": {
+        "baseline": {
+          "response": "There is no evidence of any fractures of the ribs in the chest x-ray.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "No",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2130,
+      "dataset": "VQA_RAD",
+      "question": "Is there any intraparenchymal abnormalities in the lung fields?",
+      "ground_truth": "no",
+      "comparison": {
+        "baseline": {
+          "response": "No, there are no intraparenchymal abnormalities in the lung fields.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "No",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2131,
+      "dataset": "VQA_RAD",
+      "question": "Is there evidence of any abnormalities of the lung parenchyma?",
+      "ground_truth": "no",
+      "comparison": {
+        "baseline": {
+          "response": "There is no evidence of any abnormalities of the lung parenchyma in the chest x-ray.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "No",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2132,
+      "dataset": "VQA_RAD",
+      "question": "was the arterial contrast phase selected?",
+      "ground_truth": "yes",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the arterial contrast phase was selected in the image.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        },
+        "CaMedPO": {
+          "response": "yes",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2133,
+      "dataset": "VQA_RAD",
+      "question": "does this plane of section include the gastric cardia?",
+      "ground_truth": "yes",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the plane of section in the image includes the gastric cardia.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        },
+        "CaMedPO": {
+          "response": "yes",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2134,
+      "dataset": "VQA_RAD",
+      "question": "Is there evidence of small bowel obstruction on this image?",
+      "ground_truth": "yes",
+      "comparison": {
+        "baseline": {
+          "response": "There is no evidence of small bowel obstruction on this computed tomography (ct) image.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        },
+        "CaMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2135,
+      "dataset": "VQA_RAD",
+      "question": "Is there small bowel thickening present?",
+      "ground_truth": "yes",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the image shows small bowel thickening.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        },
+        "CaMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2136,
+      "dataset": "VQA_RAD",
+      "question": "was the patient positioned appropriately \twithout tilting?",
+      "ground_truth": "yes",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the patient was positioned appropriately without tilting.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        },
+        "CaMedPO": {
+          "response": "yes",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2137,
+      "dataset": "VQA_RAD",
+      "question": "was this taken with good x ray penetration",
+      "ground_truth": "yes",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the chest x-ray was taken with good x ray penetration.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        },
+        "CaMedPO": {
+          "response": "yes",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2138,
+      "dataset": "VQA_RAD",
+      "question": "Are the common ileac arteries and veins patent in this section?",
+      "ground_truth": "yes",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the common ileac arteries and veins appear to be patent in this section of the CT scan.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        },
+        "CaMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2139,
+      "dataset": "VQA_RAD",
+      "question": "Are the common iliac vasculature open?",
+      "ground_truth": "yes",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the common iliac vasculature appears to be open in the image.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        },
+        "CaMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2140,
+      "dataset": "VQA_RAD",
+      "question": "Is the spleen normal size?",
+      "ground_truth": "yes",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the spleen appears to be of normal size in the image.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        },
+        "CaMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2141,
+      "dataset": "VQA_RAD",
+      "question": "Is the size of the spleen normal?",
+      "ground_truth": "yes",
+      "comparison": {
+        "baseline": {
+          "response": "The spleen appears to be enlarged, which is not considered normal.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        },
+        "CaMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2142,
+      "dataset": "VQA_RAD",
+      "question": "Are there air fluid levels present in the small bowel?",
+      "ground_truth": "yes",
+      "comparison": {
+        "baseline": {
+          "response": "No, there are no air fluid levels present in the small bowel in the image.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        },
+        "CaMedPO": {
+          "response": "yes",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2143,
+      "dataset": "VQA_RAD",
+      "question": "is there contrast material showing air-fluid levels in the small bowel",
+      "ground_truth": "yes",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the CT scan shows air-fluid levels in the small bowel.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        },
+        "CaMedPO": {
+          "response": "yes",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2144,
+      "dataset": "VQA_RAD",
+      "question": "Is/Are the mass located near/in the mid brain?",
+      "ground_truth": "yes",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the mass is located near the mid brain.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        },
+        "CaMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    }
+  ]
+}

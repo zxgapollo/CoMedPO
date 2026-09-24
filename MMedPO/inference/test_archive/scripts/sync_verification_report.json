@@ -1,0 +1,29 @@
+{
+  "sync_verification_report": {
+    "timestamp": "2025-09-29T10:33:01.429394",
+    "version": "TIE-ANKER DPO 优化 v1.0",
+    "files_synced": [
+      "/workspace/MMedPO/inference/inference_dpo_tie_comparison.py",
+      "/workspace/MMedPO/scripts/run_inference_merged.sh"
+    ],
+    "functions_verified": [
+      "validate_preferred_answer",
+      "validate_dispreferred_answer",
+      "apply_tie_anker_thresholds",
+      "calculate_tie_anker_weight"
+    ],
+    "test_results": {
+      "validation_functions": "PASS",
+      "weight_calculation": "PASS",
+      "threshold_filtering": "PASS"
+    },
+    "optimized_parameters": {
+      "tau_gamma_strong": "0.5 → 1.5",
+      "tau_gamma_weak": "0.1 → 0.2",
+      "tau_v": "0.5 → 0.3",
+      "tau_n_percentile": "75 → 70.0"
+    },
+    "status": "SUCCESS",
+    "notes": "所有优化功能已成功同步并验证通过"
+  }
+}

@@ -1,0 +1,39 @@
+
+# extra
+backup
+curation/Sample_Zero-Shot_Grounding_RSNA/model_weights
+curation/Sample_Zero-Shot_Grounding_RSNA/model_weights/checkpoint_final.pth
+*.pth
+
+train/dpo/docs
+train/dpo/playground
+train/dpo/wandb
+MMedPO/outputs/
+MMedPO/checkpoint/
+MMedPO/models
+MMedPO/wandb/
+MMedPO/data/iu_xray
+MMedPO/data/SLAKE
+
+MMedPO/scripts/yolov8n.pt
+
+# python venv
+.venv/
+__pycache__/
+*.pyc
+
+# ===== 评测工具中的模型权重与中间产物 =====
+baselines/**/.venv/
+evaluation/CheXbert/BiomedVLP-CXR-BERT-general/
+evaluation/CheXbert/radgraph-xl.tar.gz
+evaluation/CheXbert/output/
+*.tar.gz
+*.ckpt
+*.bin
+*.safetensors
+
+# 编译产物（超过 GitHub 100MB 单文件限制）
+paper/templates/ECCV/main.pdf
+
+# 论文资料：本地保留，不入库
+paper/

@@ -1,0 +1,1252 @@
+[
+  {
+    "id": 0,
+    "image": "xmlab1/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat modality is used to take this image?"
+      },
+      {
+        "from": "gpt",
+        "value": " MRI"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat modality is used to take this image?"
+      },
+      {
+        "from": "gpt",
+        "value": " This image was taken using X-ray imaging, which is a common technique for visualizing dense structures such as bones but is less effective for soft tissue differentiation."
+      }
+    ],
+    "weighted_score": 0.8
+  },
+  {
+    "id": 1,
+    "image": "xmlab1/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhich part of the body does this image belong to?"
+      },
+      {
+        "from": "gpt",
+        "value": " Abdomen"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhich part of the body does this image belong to?"
+      },
+      {
+        "from": "gpt",
+        "value": " This image is a breast MRI, which is a magnetic resonance imaging scan of the breast area."
+      }
+    ],
+    "weighted_score": 1.0
+  },
+  {
+    "id": 2,
+    "image": "xmlab1/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the mr weighting in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": " MRI T2-weighted"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the mr weighting in this image?"
+      },
+      {
+        "from": "gpt",
+        "value": " The mr weighting in this image is fat-saturated T1-weighted."
+      }
+    ],
+    "weighted_score": 0.8
+  },
+  {
+    "id": 3,
+    "image": "xmlab1/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain liver?"
+      },
+      {
+        "from": "gpt",
+        "value": " Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain liver?"
+      },
+      {
+        "from": "gpt",
+        "value": " No, there is no liver visible in the MRI image."
+      }
+    ],
+    "weighted_score": 1.0
+  },
+  {
+    "id": 4,
+    "image": "xmlab1/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain kidney?"
+      },
+      {
+        "from": "gpt",
+        "value": " No"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain kidney?"
+      },
+      {
+        "from": "gpt",
+        "value": " Yes, the MRI image contains the kidney, which is an important organ in the human body."
+      }
+    ],
+    "weighted_score": 0.8
+  },
+  {
+    "id": 5,
+    "image": "xmlab1/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain spleen?"
+      },
+      {
+        "from": "gpt",
+        "value": " No"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain spleen?"
+      },
+      {
+        "from": "gpt",
+        "value": " Yes, the MRI image of the chest includes the spleen."
+      }
+    ],
+    "weighted_score": 1.0
+  },
+  {
+    "id": 6,
+    "image": "xmlab1/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhere is the liver?"
+      },
+      {
+        "from": "gpt",
+        "value": " Right"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhere is the liver?"
+      },
+      {
+        "from": "gpt",
+        "value": " Left"
+      }
+    ],
+    "weighted_score": 0.2
+  },
+  {
+    "id": 7,
+    "image": "xmlab100/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat modality is used to take this image?"
+      },
+      {
+        "from": "gpt",
+        "value": " CT scan"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat modality is used to take this image?"
+      },
+      {
+        "from": "gpt",
+        "value": " The image is taken using a magnetic resonance imaging (MRI) scan."
+      }
+    ],
+    "weighted_score": 1.0
+  },
+  {
+    "id": 8,
+    "image": "xmlab100/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhich part of the body does this image belong to?"
+      },
+      {
+        "from": "gpt",
+        "value": " Chest"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhich part of the body does this image belong to?"
+      },
+      {
+        "from": "gpt",
+        "value": " This image is a computed tomography (CT) scan of the abdomen."
+      }
+    ],
+    "weighted_score": 0.8
+  },
+  {
+    "id": 9,
+    "image": "xmlab100/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the main organ in the image?"
+      },
+      {
+        "from": "gpt",
+        "value": " Liver"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the main organ in the image?"
+      },
+      {
+        "from": "gpt",
+        "value": " The main organ in the image is the lung."
+      }
+    ],
+    "weighted_score": 0.8
+  },
+  {
+    "id": 10,
+    "image": "xmlab100/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the largest organ in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": " Liver"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the largest organ in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": " The largest organ in the picture is the heart."
+      }
+    ],
+    "weighted_score": 0.2
+  },
+  {
+    "id": 11,
+    "image": "xmlab100/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain liver?"
+      },
+      {
+        "from": "gpt",
+        "value": " Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain liver?"
+      },
+      {
+        "from": "gpt",
+        "value": " No, the CT scan image does not contain the liver."
+      }
+    ],
+    "weighted_score": 1.0
+  },
+  {
+    "id": 12,
+    "image": "xmlab100/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain lung?"
+      },
+      {
+        "from": "gpt",
+        "value": " Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain lung?"
+      },
+      {
+        "from": "gpt",
+        "value": " No, the image is a CT scan of the abdomen, so it does not include the lungs."
+      }
+    ],
+    "weighted_score": 0.9
+  },
+  {
+    "id": 13,
+    "image": "xmlab100/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain heart?"
+      },
+      {
+        "from": "gpt",
+        "value": " Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain heart?"
+      },
+      {
+        "from": "gpt",
+        "value": " No, the image is focused on the abdomen and does not include the heart."
+      }
+    ],
+    "weighted_score": 0.8
+  },
+  {
+    "id": 14,
+    "image": "xmlab100/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the lung healthy?"
+      },
+      {
+        "from": "gpt",
+        "value": " Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the lung healthy?"
+      },
+      {
+        "from": "gpt",
+        "value": " No, the lung appears to have severe abnormalities and is not healthy in the CT scan."
+      }
+    ],
+    "weighted_score": 1.0
+  },
+  {
+    "id": 15,
+    "image": "xmlab100/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhich is the biggest in this image,lung,liver or heart?"
+      },
+      {
+        "from": "gpt",
+        "value": " Liver"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhich is the biggest in this image,lung,liver or heart?"
+      },
+      {
+        "from": "gpt",
+        "value": " The heart appears to be the smallest organ in this image."
+      }
+    ],
+    "weighted_score": 0.2
+  },
+  {
+    "id": 16,
+    "image": "xmlab101/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat modality is used to take this image?"
+      },
+      {
+        "from": "gpt",
+        "value": " CT scan"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat modality is used to take this image?"
+      },
+      {
+        "from": "gpt",
+        "value": " The image is taken using an X-ray machine."
+      }
+    ],
+    "weighted_score": 0.9
+  },
+  {
+    "id": 17,
+    "image": "xmlab101/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhich part of the body does this image belong to?"
+      },
+      {
+        "from": "gpt",
+        "value": " Chest\n\n(Note: This is a CT scan of the lungs, which are located in the chest.)"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhich part of the body does this image belong to?"
+      },
+      {
+        "from": "gpt",
+        "value": " The image belongs to the abdomen, specifically the left iliac fossa."
+      }
+    ],
+    "weighted_score": 1.0
+  },
+  {
+    "id": 18,
+    "image": "xmlab101/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the main organ in the image?"
+      },
+      {
+        "from": "gpt",
+        "value": " Spinal Cord"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the main organ in the image?"
+      },
+      {
+        "from": "gpt",
+        "value": " The main organ in the image is the bladder, which is part of the urinary system."
+      }
+    ],
+    "weighted_score": 0.9
+  },
+  {
+    "id": 19,
+    "image": "xmlab101/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain liver?"
+      },
+      {
+        "from": "gpt",
+        "value": " No"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain liver?"
+      },
+      {
+        "from": "gpt",
+        "value": " Yes, the CT scan of the abdomen and pelvis clearly shows the liver."
+      }
+    ],
+    "weighted_score": 1.0
+  },
+  {
+    "id": 20,
+    "image": "xmlab101/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain lung?"
+      },
+      {
+        "from": "gpt",
+        "value": " No"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain lung?"
+      },
+      {
+        "from": "gpt",
+        "value": " Yes, the CT scan clearly shows the liver rather than the lungs."
+      }
+    ],
+    "weighted_score": 0.2
+  },
+  {
+    "id": 21,
+    "image": "xmlab101/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain heart?"
+      },
+      {
+        "from": "gpt",
+        "value": " No"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain heart?"
+      },
+      {
+        "from": "gpt",
+        "value": " Yes, the image contains the heart."
+      }
+    ],
+    "weighted_score": 1.0
+  },
+  {
+    "id": 22,
+    "image": "xmlab104/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat modality is used to take this image?"
+      },
+      {
+        "from": "gpt",
+        "value": " CT scan"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat modality is used to take this image?"
+      },
+      {
+        "from": "gpt",
+        "value": " This image was taken using an ultrasound modality."
+      }
+    ],
+    "weighted_score": 0.8
+  },
+  {
+    "id": 23,
+    "image": "xmlab104/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhich part of the body does this image belong to?"
+      },
+      {
+        "from": "gpt",
+        "value": " Chest"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhich part of the body does this image belong to?"
+      },
+      {
+        "from": "gpt",
+        "value": " This image belongs to the abdomen, which is the part of the body between the chest and the pelvis containing organs such as the stomach, liver, and intestines."
+      }
+    ],
+    "weighted_score": 1.0
+  },
+  {
+    "id": 24,
+    "image": "xmlab104/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the main organ in the image?"
+      },
+      {
+        "from": "gpt",
+        "value": " Lung"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the main organ in the image?"
+      },
+      {
+        "from": "gpt",
+        "value": " The main organ in the image is the esophagus, which is a muscular tube that connects the mouth to the stomach and is responsible for transporting food and liquids."
+      }
+    ],
+    "weighted_score": 1.0
+  },
+  {
+    "id": 25,
+    "image": "xmlab104/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the largest organ in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": " Lung"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the largest organ in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": " The largest organ in the picture is the heart."
+      }
+    ],
+    "weighted_score": 0.2
+  },
+  {
+    "id": 26,
+    "image": "xmlab104/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain liver?"
+      },
+      {
+        "from": "gpt",
+        "value": " No"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain liver?"
+      },
+      {
+        "from": "gpt",
+        "value": " Yes, the image is a CT scan of the abdomen, and it includes the liver."
+      }
+    ],
+    "weighted_score": 0.9
+  },
+  {
+    "id": 27,
+    "image": "xmlab104/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain lung?"
+      },
+      {
+        "from": "gpt",
+        "value": " Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain lung?"
+      },
+      {
+        "from": "gpt",
+        "value": " No, the image is an ultrasound of the abdomen, which does not include the lungs."
+      }
+    ],
+    "weighted_score": 0.9
+  },
+  {
+    "id": 28,
+    "image": "xmlab104/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain heart?"
+      },
+      {
+        "from": "gpt",
+        "value": " No"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain heart?"
+      },
+      {
+        "from": "gpt",
+        "value": " Yes, the image is a computed tomography (CT) scan of the chest, which includes the heart."
+      }
+    ],
+    "weighted_score": 1.0
+  },
+  {
+    "id": 29,
+    "image": "xmlab104/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat diseases are included in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": " Lung Cancer"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat diseases are included in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": " The image includes the following diseases: sarcoidosis, tuberculosis, and lymphoma.\n"
+      }
+    ],
+    "weighted_score": 0.8
+  },
+  {
+    "id": 30,
+    "image": "xmlab104/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the lung look abnormal?"
+      },
+      {
+        "from": "gpt",
+        "value": " Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the lung look abnormal?"
+      },
+      {
+        "from": "gpt",
+        "value": " No, the lung looks perfectly normal, with no signs of any abnormalities or masses present in the CT scan."
+      }
+    ],
+    "weighted_score": 0.8
+  },
+  {
+    "id": 31,
+    "image": "xmlab104/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhere is/are the abnormality located?"
+      },
+      {
+        "from": "gpt",
+        "value": " Right lung"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhere is/are the abnormality located?"
+      },
+      {
+        "from": "gpt",
+        "value": " The abnormality is located in the right breast."
+      }
+    ],
+    "weighted_score": 1.0
+  },
+  {
+    "id": 32,
+    "image": "xmlab107/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat modality is used to take this image?"
+      },
+      {
+        "from": "gpt",
+        "value": " CT scan"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat modality is used to take this image?"
+      },
+      {
+        "from": "gpt",
+        "value": " The image is taken using an X-ray, which is a type of medical imaging technique."
+      }
+    ],
+    "weighted_score": 0.9
+  },
+  {
+    "id": 33,
+    "image": "xmlab107/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhich part of the body does this image belong to?"
+      },
+      {
+        "from": "gpt",
+        "value": " Chest"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhich part of the body does this image belong to?"
+      },
+      {
+        "from": "gpt",
+        "value": " Abdomen"
+      }
+    ],
+    "weighted_score": 0.8
+  },
+  {
+    "id": 34,
+    "image": "xmlab107/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the main organ in the image?"
+      },
+      {
+        "from": "gpt",
+        "value": " Lung"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the main organ in the image?"
+      },
+      {
+        "from": "gpt",
+        "value": " The main organ in the image is the liver."
+      }
+    ],
+    "weighted_score": 0.9
+  },
+  {
+    "id": 35,
+    "image": "xmlab107/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the largest organ in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": " Lung"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the largest organ in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": " The largest organ in the picture is the liver, which is located in the upper right quadrant of the abdomen."
+      }
+    ],
+    "weighted_score": 1.0
+  },
+  {
+    "id": 36,
+    "image": "xmlab107/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain liver?"
+      },
+      {
+        "from": "gpt",
+        "value": " No"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain liver?"
+      },
+      {
+        "from": "gpt",
+        "value": " Yes, the image is a CT scan of the abdomen, which includes the liver."
+      }
+    ],
+    "weighted_score": 0.9
+  },
+  {
+    "id": 37,
+    "image": "xmlab107/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain lung?"
+      },
+      {
+        "from": "gpt",
+        "value": " Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain lung?"
+      },
+      {
+        "from": "gpt",
+        "value": " No, the image does not contain lungs as it is focused on the abdominal region."
+      }
+    ],
+    "weighted_score": 0.8
+  },
+  {
+    "id": 38,
+    "image": "xmlab107/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain heart?"
+      },
+      {
+        "from": "gpt",
+        "value": " Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain heart?"
+      },
+      {
+        "from": "gpt",
+        "value": " No, the image is a chest CT scan, which primarily focuses on the lungs and surrounding structures. The heart is not present in this particular image."
+      }
+    ],
+    "weighted_score": 0.8
+  },
+  {
+    "id": 39,
+    "image": "xmlab107/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat diseases are included in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": " Lung cancer"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat diseases are included in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": " The image includes the following diseases: Acute Respiratory Distress Syndrome (ARDS), Pneumonia, and Pulmonary Edema."
+      }
+    ],
+    "weighted_score": 1.0
+  },
+  {
+    "id": 40,
+    "image": "xmlab107/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the lung healthy?"
+      },
+      {
+        "from": "gpt",
+        "value": " No"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the lung healthy?"
+      },
+      {
+        "from": "gpt",
+        "value": "    \n No, the CT scan clearly shows signs of extensive lung cancer."
+      }
+    ],
+    "weighted_score": 0.8
+  },
+  {
+    "id": 41,
+    "image": "xmlab107/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhich is the bigger in this image,lung or heart?"
+      },
+      {
+        "from": "gpt",
+        "value": " Lung"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhich is the bigger in this image,lung or heart?"
+      },
+      {
+        "from": "gpt",
+        "value": " In this image, the heart appears to be larger than the lungs."
+      }
+    ],
+    "weighted_score": 0.8
+  },
+  {
+    "id": 42,
+    "image": "xmlab108/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat modality is used to take this image?"
+      },
+      {
+        "from": "gpt",
+        "value": " CT scan"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat modality is used to take this image?"
+      },
+      {
+        "from": "gpt",
+        "value": " The image is taken using an ultrasound technique."
+      }
+    ],
+    "weighted_score": 0.8
+  },
+  {
+    "id": 43,
+    "image": "xmlab108/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhich part of the body does this image belong to?"
+      },
+      {
+        "from": "gpt",
+        "value": " The chest"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhich part of the body does this image belong to?"
+      },
+      {
+        "from": "gpt",
+        "value": " This image belongs to the abdominal region, specifically focusing on the liver."
+      }
+    ],
+    "weighted_score": 0.9
+  },
+  {
+    "id": 44,
+    "image": "xmlab108/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the main organ in the image?"
+      },
+      {
+        "from": "gpt",
+        "value": " Lung"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the main organ in the image?"
+      },
+      {
+        "from": "gpt",
+        "value": " The main organ in the image is the liver."
+      }
+    ],
+    "weighted_score": 1.0
+  },
+  {
+    "id": 45,
+    "image": "xmlab108/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the largest organ in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": " Lung"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the largest organ in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": " The largest organ in the picture is the liver, which is located in the upper right part of the image."
+      }
+    ],
+    "weighted_score": 0.8
+  },
+  {
+    "id": 46,
+    "image": "xmlab108/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain liver?"
+      },
+      {
+        "from": "gpt",
+        "value": " No"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain liver?"
+      },
+      {
+        "from": "gpt",
+        "value": " Yes, the image contains the liver since it is a CT scan of the abdomen."
+      }
+    ],
+    "weighted_score": 0.9
+  },
+  {
+    "id": 47,
+    "image": "xmlab108/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain lung?"
+      },
+      {
+        "from": "gpt",
+        "value": " Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain lung?"
+      },
+      {
+        "from": "gpt",
+        "value": " No, this is an abdominal CT scan and does not include the lungs."
+      }
+    ],
+    "weighted_score": 1.0
+  },
+  {
+    "id": 48,
+    "image": "xmlab108/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain heart?"
+      },
+      {
+        "from": "gpt",
+        "value": " Yes"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the picture contain heart?"
+      },
+      {
+        "from": "gpt",
+        "value": " No, the image does not contain the heart."
+      }
+    ],
+    "weighted_score": 1.0
+  },
+  {
+    "id": 49,
+    "image": "xmlab108/source.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat diseases are included in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": " Lung cancer"
+      }
+    ],
+    "rejected_conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat diseases are included in the picture?"
+      },
+      {
+        "from": "gpt",
+        "value": " The image includes cases of pneumonia, pulmonary edema, and acute respiratory distress syndrome (ARDS). These are all lung diseases that can be visualized on a chest CT scan."
+      }
+    ],
+    "weighted_score": 0.8
+  }
+]

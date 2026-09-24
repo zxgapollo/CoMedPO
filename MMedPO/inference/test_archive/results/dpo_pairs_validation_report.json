@@ -1,0 +1,365 @@
+{
+  "validation_summary": {
+    "summary": {
+      "total_samples": 20,
+      "valid_preferred_rate": 0.15,
+      "valid_dispreferred_rate": 0.8,
+      "valid_pairs_rate": 0.05,
+      "preferred_violations": 17,
+      "dispreferred_violations": 4
+    },
+    "detailed_violations": {
+      "preferred": [
+        {
+          "id": "boundary_3",
+          "violations": [
+            "delta_pos (0.0639) <= tau_pos (0.1)",
+            "gamma (0.0866) <= tau_gamma_weak (0.1)",
+            "m_v (0.4912) <= tau_v (0.5)",
+            "m_n (0.7570) > tau_n_threshold (0.7500)"
+          ]
+        },
+        {
+          "id": "boundary_4",
+          "violations": [
+            "m_v (0.4341) <= tau_v (0.5)"
+          ]
+        },
+        {
+          "id": "boundary_5",
+          "violations": [
+            "gamma (0.0598) <= tau_gamma_weak (0.1)"
+          ]
+        },
+        {
+          "id": "poor_6",
+          "violations": [
+            "delta_pos (-0.4811) <= tau_pos (0.1)",
+            "gamma (-0.3577) <= tau_gamma_weak (0.1)",
+            "m_v (0.2988) <= tau_v (0.5)",
+            "m_n (0.9247) > tau_n_threshold (0.7500)"
+          ]
+        },
+        {
+          "id": "poor_7",
+          "violations": [
+            "delta_pos (-0.3983) <= tau_pos (0.1)",
+            "gamma (-0.0737) <= tau_gamma_weak (0.1)",
+            "m_v (0.3818) <= tau_v (0.5)",
+            "m_n (1.1579) > tau_n_threshold (0.7500)"
+          ]
+        },
+        {
+          "id": "poor_8",
+          "violations": [
+            "delta_pos (-0.4513) <= tau_pos (0.1)",
+            "gamma (-0.4751) <= tau_gamma_weak (0.1)",
+            "m_v (0.1976) <= tau_v (0.5)",
+            "m_n (0.9555) > tau_n_threshold (0.7500)"
+          ]
+        },
+        {
+          "id": "poor_9",
+          "violations": [
+            "delta_pos (-0.3038) <= tau_pos (0.1)",
+            "gamma (-0.2015) <= tau_gamma_weak (0.1)",
+            "m_v (0.1423) <= tau_v (0.5)",
+            "m_n (1.1209) > tau_n_threshold (0.7500)"
+          ]
+        },
+        {
+          "id": "poor_10",
+          "violations": [
+            "delta_pos (-0.0753) <= tau_pos (0.1)",
+            "gamma (-0.4970) <= tau_gamma_weak (0.1)",
+            "m_v (0.3446) <= tau_v (0.5)",
+            "m_n (1.0827) > tau_n_threshold (0.7500)"
+          ]
+        },
+        {
+          "id": "poor_11",
+          "violations": [
+            "delta_pos (-0.4593) <= tau_pos (0.1)",
+            "gamma (-0.4363) <= tau_gamma_weak (0.1)",
+            "m_v (0.3589) <= tau_v (0.5)",
+            "m_n (1.0493) > tau_n_threshold (0.7500)"
+          ]
+        },
+        {
+          "id": "poor_12",
+          "violations": [
+            "delta_pos (-0.3290) <= tau_pos (0.1)",
+            "gamma (-0.0987) <= tau_gamma_weak (0.1)",
+            "m_v (0.2913) <= tau_v (0.5)",
+            "m_n (1.1549) > tau_n_threshold (0.7500)"
+          ]
+        },
+        {
+          "id": "poor_13",
+          "violations": [
+            "delta_pos (-0.1077) <= tau_pos (0.1)",
+            "gamma (-0.1913) <= tau_gamma_weak (0.1)",
+            "m_v (0.3313) <= tau_v (0.5)",
+            "m_n (0.9975) > tau_n_threshold (0.7500)"
+          ]
+        },
+        {
+          "id": "poor_14",
+          "violations": [
+            "delta_pos (-0.4860) <= tau_pos (0.1)",
+            "gamma (-0.4827) <= tau_gamma_weak (0.1)",
+            "m_v (0.2909) <= tau_v (0.5)",
+            "m_n (0.9257) > tau_n_threshold (0.7500)"
+          ]
+        },
+        {
+          "id": "poor_15",
+          "violations": [
+            "delta_pos (-0.3629) <= tau_pos (0.1)",
+            "gamma (-0.0844) <= tau_gamma_weak (0.1)",
+            "m_v (0.1686) <= tau_v (0.5)",
+            "m_n (0.8308) > tau_n_threshold (0.7500)"
+          ]
+        },
+        {
+          "id": "poor_16",
+          "violations": [
+            "delta_pos (0.0113) <= tau_pos (0.1)",
+            "gamma (-0.1516) <= tau_gamma_weak (0.1)",
+            "m_v (0.3614) <= tau_v (0.5)",
+            "m_n (1.1215) > tau_n_threshold (0.7500)"
+          ]
+        },
+        {
+          "id": "poor_17",
+          "violations": [
+            "delta_pos (-0.2034) <= tau_pos (0.1)",
+            "gamma (-0.0071) <= tau_gamma_weak (0.1)",
+            "m_v (0.1954) <= tau_v (0.5)",
+            "m_n (0.8440) > tau_n_threshold (0.7500)"
+          ]
+        },
+        {
+          "id": "poor_18",
+          "violations": [
+            "delta_pos (-0.0501) <= tau_pos (0.1)",
+            "gamma (-0.4962) <= tau_gamma_weak (0.1)",
+            "m_v (0.2532) <= tau_v (0.5)",
+            "m_n (0.9670) > tau_n_threshold (0.7500)"
+          ]
+        },
+        {
+          "id": "poor_19",
+          "violations": [
+            "delta_pos (-0.3143) <= tau_pos (0.1)",
+            "gamma (-0.3222) <= tau_gamma_weak (0.1)",
+            "m_v (0.2556) <= tau_v (0.5)",
+            "m_n (1.0812) > tau_n_threshold (0.7500)"
+          ]
+        }
+      ],
+      "dispreferred": [
+        {
+          "id": "ideal_1",
+          "satisfied_conditions": []
+        },
+        {
+          "id": "ideal_2",
+          "satisfied_conditions": []
+        },
+        {
+          "id": "boundary_4",
+          "satisfied_conditions": []
+        },
+        {
+          "id": "boundary_5",
+          "satisfied_conditions": []
+        }
+      ]
+    },
+    "recommendations": [
+      "正例选择规则过于严格，考虑调整阈值参数",
+      "整体pair构建成功率较低，建议重新审视阈值设置"
+    ]
+  },
+  "sample_validations": [
+    {
+      "id": "ideal_0",
+      "case_id": "case_0",
+      "preferred_validation": {
+        "is_valid": true,
+        "violations": [],
+        "metrics": {
+          "delta_pos": 1.0618101782710436,
+          "gamma": 1.178392730173686,
+          "m_v": 0.9591950905182219,
+          "m_n": -0.12199067977878175
+        }
+      },
+      "dispreferred_validation": {
+        "is_valid": true,
+        "satisfied_conditions": [
+          "delta_neg (0.1655) >= 0"
+        ],
+        "metrics": {
+          "delta_neg": 0.1655000144869413,
+          "gamma": 1.178392730173686,
+          "m_n": -0.12199067977878175
+        }
+      },
+      "current_implementation": {
+        "passes_current_filter": false,
+        "filter_checks": [
+          "PASS: tie_diff (2.2249) >= tau_pos (0.1)",
+          "FAIL: gamma (1.1784) not in [0.1, 0.5]",
+          "PASS: m_v (0.9592) >= tau_v (0.5)",
+          "PASS: m_n (-0.1220) <= tau_n_threshold (0.7500)"
+        ]
+      }
+    },
+    {
+      "id": "ideal_1",
+      "case_id": "case_1",
+      "preferred_validation": {
+        "is_valid": true,
+        "violations": [],
+        "metrics": {
+          "delta_pos": 1.7992642186624028,
+          "gamma": 1.1496870933552545,
+          "m_v": 0.6123506965774814,
+          "m_n": 0.28495492608099715
+        }
+      },
+      "dispreferred_validation": {
+        "is_valid": false,
+        "satisfied_conditions": [],
+        "metrics": {
+          "delta_neg": -0.07921949177975385,
+          "gamma": 1.1496870933552545,
+          "m_n": 0.28495492608099715
+        }
+      },
+      "current_implementation": {
+        "passes_current_filter": false,
+        "filter_checks": [
+          "PASS: tie_diff (3.3464) >= tau_pos (0.1)",
+          "FAIL: gamma (1.1497) not in [0.1, 0.5]",
+          "PASS: m_v (0.6124) >= tau_v (0.5)",
+          "PASS: m_n (0.2850) <= tau_n_threshold (0.7500)"
+        ]
+      }
+    },
+    {
+      "id": "ideal_2",
+      "case_id": "case_2",
+      "preferred_validation": {
+        "is_valid": true,
+        "violations": [],
+        "metrics": {
+          "delta_pos": 0.7727374508106509,
+          "gamma": 0.6650906915514452,
+          "m_v": 0.9148538589793427,
+          "m_n": 0.01597250932105787
+        }
+      },
+      "dispreferred_validation": {
+        "is_valid": false,
+        "satisfied_conditions": [],
+        "metrics": {
+          "delta_neg": -0.37161684310259635,
+          "gamma": 0.6650906915514452,
+          "m_n": 0.01597250932105787
+        }
+      },
+      "current_implementation": {
+        "passes_current_filter": false,
+        "filter_checks": [
+          "PASS: tie_diff (1.6647) >= tau_pos (0.1)",
+          "FAIL: gamma (0.6651) not in [0.1, 0.5]",
+          "PASS: m_v (0.9149) >= tau_v (0.5)",
+          "PASS: m_n (0.0160) <= tau_n_threshold (0.7500)"
+        ]
+      }
+    },
+    {
+      "id": "boundary_3",
+      "case_id": "case_3",
+      "preferred_validation": {
+        "is_valid": false,
+        "violations": [
+          "delta_pos (0.0639) <= tau_pos (0.1)",
+          "gamma (0.0866) <= tau_gamma_weak (0.1)",
+          "m_v (0.4912) <= tau_v (0.5)",
+          "m_n (0.7570) > tau_n_threshold (0.7500)"
+        ],
+        "metrics": {
+          "delta_pos": 0.06394938606520419,
+          "gamma": 0.08663618432936918,
+          "m_v": 0.49121399684340716,
+          "m_n": 0.7570351922786027
+        }
+      },
+      "dispreferred_validation": {
+        "is_valid": true,
+        "satisfied_conditions": [
+          "m_n (0.7570) > tau_n_threshold (0.7500)"
+        ],
+        "metrics": {
+          "delta_neg": -0.04157107029295637,
+          "gamma": 0.08663618432936918,
+          "m_n": 0.7570351922786027
+        }
+      },
+      "current_implementation": {
+        "passes_current_filter": false,
+        "filter_checks": [
+          "FAIL: tie_diff (0.0883) < tau_pos (0.1)",
+          "FAIL: gamma (0.0866) not in [0.1, 0.5]",
+          "FAIL: m_v (0.4912) < tau_v (0.5)",
+          "FAIL: m_n (0.7570) > tau_n_threshold (0.7500)"
+        ]
+      }
+    },
+    {
+      "id": "boundary_4",
+      "case_id": "case_4",
+      "preferred_validation": {
+        "is_valid": false,
+        "violations": [
+          "m_v (0.4341) <= tau_v (0.5)"
+        ],
+        "metrics": {
+          "delta_pos": 0.10924145688620424,
+          "gamma": 0.11075448519014383,
+          "m_v": 0.4341048247374583,
+          "m_n": 0.6130103185970559
+        }
+      },
+      "dispreferred_validation": {
+        "is_valid": false,
+        "satisfied_conditions": [],
+        "metrics": {
+          "delta_neg": -0.09070991745600046,
+          "gamma": 0.11075448519014383,
+          "m_n": 0.6130103185970559
+        }
+      },
+      "current_implementation": {
+        "passes_current_filter": false,
+        "filter_checks": [
+          "PASS: tie_diff (0.4764) >= tau_pos (0.1)",
+          "PASS: gamma (0.1108) in range [0.1, 0.5]",
+          "FAIL: m_v (0.4341) < tau_v (0.5)",
+          "PASS: m_n (0.6130) <= tau_n_threshold (0.7500)"
+        ]
+      }
+    }
+  ],
+  "parameters": {
+    "tau_pos": 0.1,
+    "tau_gamma_weak": 0.1,
+    "tau_gamma_strong": 0.5,
+    "tau_v": 0.5,
+    "tau_n_percentile": 75
+  }
+}

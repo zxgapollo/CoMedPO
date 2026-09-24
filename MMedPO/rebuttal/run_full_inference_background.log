@@ -1,0 +1,8 @@
+[2026-01-26T14:51:51+08:00] Launched PID 15037 for fill_remove_zero_scale_1.0 (questions: /share_docker/workspace/Med/Med-main/Med-main/MMedPO/data/experiments/lesion_subset/slake_subset_500_fill_remove_zero_scale_1.0.json), logging to /share_docker/workspace/Med/Med-main/Med-main/MMedPO/rebuttal/fill_remove_zero_scale_1.0_inference.log
+[2026-01-26T14:51:51+08:00] Launched PID 15043 for fill_remove_noise_s0.2_scale_1.0 (questions: /share_docker/workspace/Med/Med-main/Med-main/MMedPO/data/experiments/lesion_subset/slake_subset_500_fill_remove_noise_s0.2_scale_1.0.json), logging to /share_docker/workspace/Med/Med-main/Med-main/MMedPO/rebuttal/fill_remove_noise_s0.2_scale_1.0_inference.log
+[2026-01-26T14:51:51+08:00] Launched PID 15047 for fill_remove_noise_s0.5_scale_1.5 (questions: /share_docker/workspace/Med/Med-main/Med-main/MMedPO/data/experiments/lesion_subset/slake_subset_500_fill_remove_noise_s0.5_scale_1.5.json), logging to /share_docker/workspace/Med/Med-main/Med-main/MMedPO/rebuttal/fill_remove_noise_s0.5_scale_1.5_inference.log
+[2026-01-26T14:51:51+08:00] Waiting for 3 inference jobs: 15037 15043 15047
+[2026-01-26T14:52:53+08:00] PID 15037 failed
+[2026-01-26T14:52:53+08:00] PID 15043 failed
+[2026-01-26T14:52:53+08:00] PID 15047 failed
+[2026-01-26T14:52:53+08:00] Some inference jobs failed: 15037 15043 15047

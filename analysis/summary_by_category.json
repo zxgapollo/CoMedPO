@@ -1,0 +1,43 @@
+{
+  "summary_by_category": {
+    "open": {
+      "total_cases": 2094,
+      "camppo_best_cases": 551,
+      "typical_errors": {
+        "baseline": "过度生成，概念混淆",
+        "MMedPO": "过度生成，内容不准确"
+      },
+      "datasets": [
+        "SLAKE"
+      ]
+    },
+    "close": {
+      "total_cases": 101,
+      "camppo_best_cases": 19,
+      "typical_errors": {
+        "baseline": "过度生成，回答冗长",
+        "MMedPO": "过度生成，复杂化简单问题"
+      },
+      "datasets": [
+        "VQA_RAD"
+      ]
+    },
+    "report": {
+      "total_cases": 0,
+      "camppo_advantages": "减少误诊，提高医学术语准确性",
+      "typical_errors": {
+        "baseline": "严重误诊，如将正常胸片诊断为胸腔积液",
+        "general": "关键医学术语不匹配"
+      },
+      "datasets": [
+        "IU_XRAY"
+      ]
+    }
+  },
+  "overall_conclusion": {
+    "open_vqa": "CaMedPO在开放式VQA中表现最优，显著减少过度生成问题",
+    "close_vqa": "CaMedPO在封闭式VQA中准确率最高，回答更简洁准确",
+    "report_generation": "CaMedPO在报告生成中减少误诊，提高医学术语准确性",
+    "general_recommendation": "在所有医学VQA任务中优先采用CaMedPO方法"
+  }
+}

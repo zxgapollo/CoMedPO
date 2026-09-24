@@ -1,0 +1,784 @@
+{
+  "filter_criteria": {
+    "description": "CaMedPO最优案例筛选条件",
+    "conditions": [
+      "CaMedPO回答正确 (correct: true)",
+      "Baseline回答错误 (correct: false)",
+      "MMedPO回答错误 (correct: false)",
+      "这些案例最能体现CaMedPO的优越性"
+    ]
+  },
+  "overall_statistics": {
+    "total_cases_analyzed": 2205,
+    "total_camppo_superior_cases": 22,
+    "overall_percentage": 0.9977324263038548
+  },
+  "by_category": {
+    "open": {
+      "total_cases": 50,
+      "camppo_superior_cases": 13,
+      "percentage": 26.0,
+      "dataset": "开放式医学视觉问答案例（SLAKE数据集）",
+      "sample_cases": [
+        {
+          "case_id": 3,
+          "dataset": "SLAKE",
+          "question": "What is the main organ in the image?",
+          "ground_truth": "Lung, Spinal Cord",
+          "comparison": {
+            "baseline": {
+              "response": "The main organ in the image is the thorax, which is the part of the body between the neck and the abdomen. It contains vital organs such as the heart and lungs.",
+              "correct": false,
+              "issue": "回答错误; 过度生成"
+            },
+            "MMedPO": {
+              "response": "The main organ in the image is the lung.",
+              "correct": false,
+              "issue": "回答错误"
+            },
+            "CaMedPO": {
+              "response": "Lung",
+              "correct": true,
+              "issue": "无"
+            }
+          }
+        },
+        {
+          "case_id": 8,
+          "dataset": "SLAKE",
+          "question": "What diseases are included in the picture?",
+          "ground_truth": "Lung Cancer",
+          "comparison": {
+            "baseline": {
+              "response": "The image includes patients with two different diseases: sarcoidosis and tuberculosis.",
+              "correct": false,
+              "issue": "回答错误; 过度生成"
+            },
+            "MMedPO": {
+              "response": "The image includes patients with pneumonia and COVID-19.",
+              "correct": false,
+              "issue": "回答错误"
+            },
+            "CaMedPO": {
+              "response": "Lung cancer",
+              "correct": true,
+              "issue": "无"
+            }
+          }
+        },
+        {
+          "case_id": 9,
+          "dataset": "SLAKE",
+          "question": "Is the lung healthy?",
+          "ground_truth": "No",
+          "comparison": {
+            "baseline": {
+              "response": "Yes, the lung appears to be healthy in the image.",
+              "correct": false,
+              "issue": "回答错误"
+            },
+            "MMedPO": {
+              "response": "Yes, the lung appears to be healthy in the image.",
+              "correct": false,
+              "issue": "回答错误"
+            },
+            "CaMedPO": {
+              "response": "No",
+              "correct": true,
+              "issue": "无"
+            }
+          }
+        },
+        {
+          "case_id": 14,
+          "dataset": "SLAKE",
+          "question": "What is the main organ in the image?",
+          "ground_truth": "Lung",
+          "comparison": {
+            "baseline": {
+              "response": "The main organ in the image is the esophagus, which is a muscular tube that connects the mouth to the stomach and is responsible for transporting food and liquids.",
+              "correct": false,
+              "issue": "回答错误"
+            },
+            "MMedPO": {
+              "response": "The main organ in the image is the esophagus, which is a muscular tube that connects the mouth to the stomach and is responsible for transporting food and liquids.",
+              "correct": false,
+              "issue": "回答错误"
+            },
+            "CaMedPO": {
+              "response": "Lung",
+              "correct": true,
+              "issue": "无"
+            }
+          }
+        },
+        {
+          "case_id": 15,
+          "dataset": "SLAKE",
+          "question": "What is the largest organ in the picture?",
+          "ground_truth": "Lung",
+          "comparison": {
+            "baseline": {
+              "response": "The largest organ in the image is the stomach.",
+              "correct": false,
+              "issue": "回答错误"
+            },
+            "MMedPO": {
+              "response": "The largest organ in the picture is the liver.",
+              "correct": false,
+              "issue": "回答错误"
+            },
+            "CaMedPO": {
+              "response": "Lung",
+              "correct": true,
+              "issue": "无"
+            }
+          }
+        }
+      ]
+    },
+    "close": {
+      "total_cases": 50,
+      "camppo_superior_cases": 9,
+      "percentage": 18.0,
+      "dataset": "封闭式医学视觉问答案例（VQA_RAD数据集）",
+      "sample_cases": [
+        {
+          "case_id": 2096,
+          "dataset": "VQA_RAD",
+          "question": "Are the lungs normal appearing?",
+          "ground_truth": "no",
+          "comparison": {
+            "baseline": {
+              "response": "Yes, the chest X-ray shows normal appearing lungs.",
+              "correct": false,
+              "issue": "回答错误; 过度生成"
+            },
+            "MMedPO": {
+              "response": "Yes",
+              "correct": false,
+              "issue": "回答错误"
+            },
+            "CaMedPO": {
+              "response": "No",
+              "correct": true,
+              "issue": "无"
+            }
+          }
+        },
+        {
+          "case_id": 2098,
+          "dataset": "VQA_RAD",
+          "question": "What type of imaging does this not represent?",
+          "ground_truth": "ultrasound",
+          "comparison": {
+            "baseline": {
+              "response": "This chest X-ray does not represent a case of pneumonia.",
+              "correct": false,
+              "issue": "回答错误; 过度生成"
+            },
+            "MMedPO": {
+              "response": "Chest X-ray",
+              "correct": false,
+              "issue": "回答错误"
+            },
+            "CaMedPO": {
+              "response": "ultrasound",
+              "correct": true,
+              "issue": "无"
+            }
+          }
+        },
+        {
+          "case_id": 2104,
+          "dataset": "VQA_RAD",
+          "question": "Is there blunting of the costovertebral angles?",
+          "ground_truth": "no",
+          "comparison": {
+            "baseline": {
+              "response": "Yes, the chest X-ray shows blunting of the costovertebral angles.",
+              "correct": false,
+              "issue": "回答错误; 过度生成"
+            },
+            "MMedPO": {
+              "response": "Yes",
+              "correct": false,
+              "issue": "回答错误"
+            },
+            "CaMedPO": {
+              "response": "No",
+              "correct": true,
+              "issue": "无"
+            }
+          }
+        },
+        {
+          "case_id": 2113,
+          "dataset": "VQA_RAD",
+          "question": "Is there a fracture?",
+          "ground_truth": "no",
+          "comparison": {
+            "baseline": {
+              "response": "Yes, there is a fracture in the image.",
+              "correct": false,
+              "issue": "回答错误; 过度生成"
+            },
+            "MMedPO": {
+              "response": "Yes",
+              "correct": false,
+              "issue": "回答错误"
+            },
+            "CaMedPO": {
+              "response": "No",
+              "correct": true,
+              "issue": "无"
+            }
+          }
+        },
+        {
+          "case_id": 2114,
+          "dataset": "VQA_RAD",
+          "question": "How is the patient oriented?",
+          "ground_truth": "posterior-anterior",
+          "comparison": {
+            "baseline": {
+              "response": "The patient is oriented in the image, which means they are positioned in a way that is easily recognizable and understandable for the viewer. This is important for medical professionals to accurately interpret the image and identify any abnormalities or changes in the patient's condition.",
+              "correct": false,
+              "issue": "回答错误; 过度生成"
+            },
+            "MMedPO": {
+              "response": "Coronal Plane",
+              "correct": false,
+              "issue": "回答错误"
+            },
+            "CaMedPO": {
+              "response": "PA",
+              "correct": true,
+              "issue": "无"
+            }
+          }
+        }
+      ]
+    },
+    "report": {
+      "total_cases": 10,
+      "camppo_superior_cases": 0,
+      "percentage": 0.0,
+      "dataset": "医学报告生成案例（IU_XRAY数据集）- 三种方法完整对比",
+      "sample_cases": []
+    }
+  },
+  "all_superior_cases": [
+    {
+      "case_id": 3,
+      "dataset": "SLAKE",
+      "question": "What is the main organ in the image?",
+      "ground_truth": "Lung, Spinal Cord",
+      "comparison": {
+        "baseline": {
+          "response": "The main organ in the image is the thorax, which is the part of the body between the neck and the abdomen. It contains vital organs such as the heart and lungs.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "The main organ in the image is the lung.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "Lung",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 8,
+      "dataset": "SLAKE",
+      "question": "What diseases are included in the picture?",
+      "ground_truth": "Lung Cancer",
+      "comparison": {
+        "baseline": {
+          "response": "The image includes patients with two different diseases: sarcoidosis and tuberculosis.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "The image includes patients with pneumonia and COVID-19.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "Lung cancer",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 9,
+      "dataset": "SLAKE",
+      "question": "Is the lung healthy?",
+      "ground_truth": "No",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the lung appears to be healthy in the image.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "MMedPO": {
+          "response": "Yes, the lung appears to be healthy in the image.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "No",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 14,
+      "dataset": "SLAKE",
+      "question": "What is the main organ in the image?",
+      "ground_truth": "Lung",
+      "comparison": {
+        "baseline": {
+          "response": "The main organ in the image is the esophagus, which is a muscular tube that connects the mouth to the stomach and is responsible for transporting food and liquids.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "MMedPO": {
+          "response": "The main organ in the image is the esophagus, which is a muscular tube that connects the mouth to the stomach and is responsible for transporting food and liquids.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "Lung",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 15,
+      "dataset": "SLAKE",
+      "question": "What is the largest organ in the picture?",
+      "ground_truth": "Lung",
+      "comparison": {
+        "baseline": {
+          "response": "The largest organ in the image is the stomach.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "MMedPO": {
+          "response": "The largest organ in the picture is the liver.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "Lung",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 18,
+      "dataset": "SLAKE",
+      "question": "What diseases are included in the picture?",
+      "ground_truth": "Lung Cancer",
+      "comparison": {
+        "baseline": {
+          "response": "The image includes patients with sarcoidosis and tuberculosis.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "MMedPO": {
+          "response": "The image includes cases of pneumonia and tuberculosis.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "Lung cancer",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 19,
+      "dataset": "SLAKE",
+      "question": "Is the lung healthy?",
+      "ground_truth": "No",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the lung appears to be healthy in the image.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "MMedPO": {
+          "response": "Yes, the lung appears to be healthy in the image.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "No",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 21,
+      "dataset": "SLAKE",
+      "question": "Which is the biggest in this image,lung,liver or heart?",
+      "ground_truth": "Lung",
+      "comparison": {
+        "baseline": {
+          "response": "The biggest in this image is the liver.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "MMedPO": {
+          "response": "The biggest in this image is the liver.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "Lung",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 30,
+      "dataset": "SLAKE",
+      "question": "Is the lung healthy?",
+      "ground_truth": "No",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the lung appears to be healthy in the image.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "MMedPO": {
+          "response": "Yes, the lung appears to be healthy in the image.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "No",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 34,
+      "dataset": "SLAKE",
+      "question": "What is the largest organ in the picture?",
+      "ground_truth": "Lung",
+      "comparison": {
+        "baseline": {
+          "response": "The largest organ in the chest X-ray is the heart.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "MMedPO": {
+          "response": "The largest organ in the picture is the heart.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "Lung",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 42,
+      "dataset": "SLAKE",
+      "question": "Is there any abnormality in the spleen?",
+      "ground_truth": "No",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, there appears to be an abnormality in the spleen. The MRI image shows a splenic mass, which is an unusual growth or lesion within the spleen.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes, there is an abnormality in the spleen. The MRI image shows a splenic mass, which is an abnormal growth or lesion within the spleen.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "No",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 45,
+      "dataset": "SLAKE",
+      "question": "Does the picture contain kidney?",
+      "ground_truth": "No",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the image contains the kidney.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "MMedPO": {
+          "response": "Yes, the image contains the kidney.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "No",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 50,
+      "dataset": "SLAKE",
+      "question": "What is the largest organ in the picture?",
+      "ground_truth": "Lung",
+      "comparison": {
+        "baseline": {
+          "response": "The largest organ in the chest X-ray is the heart.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "MMedPO": {
+          "response": "The largest organ in the picture is the heart.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "Lung",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2096,
+      "dataset": "VQA_RAD",
+      "question": "Are the lungs normal appearing?",
+      "ground_truth": "no",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the chest X-ray shows normal appearing lungs.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "No",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2098,
+      "dataset": "VQA_RAD",
+      "question": "What type of imaging does this not represent?",
+      "ground_truth": "ultrasound",
+      "comparison": {
+        "baseline": {
+          "response": "This chest X-ray does not represent a case of pneumonia.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Chest X-ray",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "ultrasound",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2104,
+      "dataset": "VQA_RAD",
+      "question": "Is there blunting of the costovertebral angles?",
+      "ground_truth": "no",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the chest X-ray shows blunting of the costovertebral angles.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "No",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2113,
+      "dataset": "VQA_RAD",
+      "question": "Is there a fracture?",
+      "ground_truth": "no",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, there is a fracture in the image.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "No",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2114,
+      "dataset": "VQA_RAD",
+      "question": "How is the patient oriented?",
+      "ground_truth": "posterior-anterior",
+      "comparison": {
+        "baseline": {
+          "response": "The patient is oriented in the image, which means they are positioned in a way that is easily recognizable and understandable for the viewer. This is important for medical professionals to accurately interpret the image and identify any abnormalities or changes in the patient's condition.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Coronal Plane",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "PA",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2117,
+      "dataset": "VQA_RAD",
+      "question": "Is this an anterior posterior image?",
+      "ground_truth": "no",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the image is an anterior posterior chest X-ray.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "no",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2120,
+      "dataset": "VQA_RAD",
+      "question": "Is there air under the diaphragm?",
+      "ground_truth": "no",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, there is air under the diaphragm in the image.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "No",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2123,
+      "dataset": "VQA_RAD",
+      "question": "Is this an anterior-posterior image",
+      "ground_truth": "no",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the image is an anterior-posterior chest X-ray.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "no",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2125,
+      "dataset": "VQA_RAD",
+      "question": "Is there a skull fracture pictured?",
+      "ground_truth": "no",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the MRI image shows a skull fracture.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "No",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    }
+  ],
+  "academic_value": {
+    "research_significance": "这些案例完美展示了CaMedPO相比其他方法的临床优势",
+    "clinical_relevance": "在关键医学诊断中，CaMedPO显著减少了误诊风险",
+    "methodology_insights": "通过对比分析，揭示了过度生成问题的解决方案"
+  }
+}

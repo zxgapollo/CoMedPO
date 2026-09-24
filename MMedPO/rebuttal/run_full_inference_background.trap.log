@@ -1,0 +1,4 @@
+[2026-01-26T14:52:53+08:00] Caught EXIT/INT/TERM (rc=0), killing children 15037 15043 15047
+[2026-01-26T15:14:43+08:00] Caught EXIT/INT/TERM (rc=130), killing children 
+[2026-01-26T15:14:43+08:00] Caught EXIT/INT/TERM (rc=130), killing children 
+[2026-01-26T16:56:38+08:00] Caught EXIT/INT/TERM (rc=0), killing children 

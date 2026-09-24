@@ -1,0 +1,54 @@
+[
+  {
+    "id": "ideal_1",
+    "case_id": "case_001",
+    "question": "患者症状分析",
+    "image": "case_001/case_001.jpg",
+    "chosen": "正确答案1",
+    "rejected": "错误答案1",
+    "tie_weight": 0.9490561888139923,
+    "tie_score": 1.2247447213916076,
+    "validation_info": {
+      "preferred_valid": true,
+      "dispreferred_valid": true,
+      "dispreferred_reasons": [
+        "前景未抑制错误答案: Δ⁻(0.1000) ≥ 0"
+      ]
+    },
+    "metadata": {
+      "tie_positive": 0.9,
+      "tie_negative": 0.2,
+      "delta_pos": 0.6,
+      "delta_neg": 0.1,
+      "m_v": 0.8,
+      "m_n": 0.4,
+      "gamma": 0.5
+    }
+  },
+  {
+    "id": "perfect_1",
+    "case_id": "case_001",
+    "question": "患者症状分析",
+    "image": "case_001/case_001.jpg",
+    "chosen": "这是一个高质量的正确答案，展现了深入的医学理解",
+    "rejected": "这是一个错误的答案，包含明显的医学错误",
+    "tie_weight": 0.8581489350995123,
+    "tie_score": 0.0,
+    "validation_info": {
+      "preferred_valid": true,
+      "dispreferred_valid": true,
+      "dispreferred_reasons": [
+        "前景未抑制错误答案: Δ⁻(0.1000) ≥ 0"
+      ]
+    },
+    "metadata": {
+      "tie_positive": 0.9,
+      "tie_negative": 0.1,
+      "delta_pos": 0.8,
+      "delta_neg": 0.1,
+      "m_v": 0.9,
+      "m_n": 0.5,
+      "gamma": 0.2
+    }
+  }
+]

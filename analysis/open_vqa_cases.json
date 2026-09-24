@@ -1,0 +1,1157 @@
+{
+  "category": "open_ended_vqa",
+  "description": "开放式医学视觉问答案例（SLAKE数据集）",
+  "total_cases": 2094,
+  "cases": [
+    {
+      "case_id": 1,
+      "dataset": "SLAKE",
+      "question": "What modality is used to take this image?",
+      "ground_truth": "CT",
+      "comparison": {
+        "baseline": {
+          "response": "The image is a computed tomography (CT) scan of the chest.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "MMedPO": {
+          "response": "The image is taken using computed tomography (CT), which is a type of medical imaging technique.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "CaMedPO": {
+          "response": "CT scan",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 2,
+      "dataset": "SLAKE",
+      "question": "Which part of the body does this image belong to?",
+      "ground_truth": "Chest",
+      "comparison": {
+        "baseline": {
+          "response": "The image belongs to the thoracic region, which is the part of the body between the neck and the abdomen. It includes the chest cavity and its contents, such as the heart, lungs, and other structures.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "The image belongs to the thoracic region, which is the part of the body between the neck and the abdomen. It includes the chest cavity and its contents, such as the lungs, heart, and rib cage.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "CaMedPO": {
+          "response": "Chest",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 3,
+      "dataset": "SLAKE",
+      "question": "What is the main organ in the image?",
+      "ground_truth": "Lung, Spinal Cord",
+      "comparison": {
+        "baseline": {
+          "response": "The main organ in the image is the thorax, which is the part of the body between the neck and the abdomen. It contains vital organs such as the heart and lungs.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "The main organ in the image is the lung.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "Lung",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 4,
+      "dataset": "SLAKE",
+      "question": "What is the largest organ in the picture?",
+      "ground_truth": "Lung",
+      "comparison": {
+        "baseline": {
+          "response": "The largest organ in the image is the thoracic aorta, which is a part of the aorta, the main and largest artery in the body.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "The largest organ in the picture is the lung.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "CaMedPO": {
+          "response": "Lung",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 5,
+      "dataset": "SLAKE",
+      "question": "Does the picture contain liver?",
+      "ground_truth": "No",
+      "comparison": {
+        "baseline": {
+          "response": "No, the image does not contain liver.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "MMedPO": {
+          "response": "No, the image does not contain liver.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "CaMedPO": {
+          "response": "No",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 6,
+      "dataset": "SLAKE",
+      "question": "Does the picture contain lung?",
+      "ground_truth": "Yes",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the image is a computed tomography (CT) scan of the chest, which includes the lungs.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        },
+        "CaMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 7,
+      "dataset": "SLAKE",
+      "question": "Does the picture contain heart?",
+      "ground_truth": "No",
+      "comparison": {
+        "baseline": {
+          "response": "No, the image does not contain the heart.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "No.",
+          "correct": true,
+          "issue": "无"
+        },
+        "CaMedPO": {
+          "response": "Yes",
+          "correct": false,
+          "issue": "回答错误"
+        }
+      }
+    },
+    {
+      "case_id": 8,
+      "dataset": "SLAKE",
+      "question": "What diseases are included in the picture?",
+      "ground_truth": "Lung Cancer",
+      "comparison": {
+        "baseline": {
+          "response": "The image includes patients with two different diseases: sarcoidosis and tuberculosis.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "The image includes patients with pneumonia and COVID-19.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "Lung cancer",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 9,
+      "dataset": "SLAKE",
+      "question": "Is the lung healthy?",
+      "ground_truth": "No",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the lung appears to be healthy in the image.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "MMedPO": {
+          "response": "Yes, the lung appears to be healthy in the image.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "No",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 10,
+      "dataset": "SLAKE",
+      "question": "Where is/are the abnormality located?",
+      "ground_truth": "Left Lung, Right",
+      "comparison": {
+        "baseline": {
+          "response": "The abnormality is located in the right upper lobe of the lung.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "The abnormality is located in the right lung.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "Right lung",
+          "correct": false,
+          "issue": "回答错误"
+        }
+      }
+    },
+    {
+      "case_id": 11,
+      "dataset": "SLAKE",
+      "question": "Which is the biggest in this image,lung,liver or heart?",
+      "ground_truth": "Lung",
+      "comparison": {
+        "baseline": {
+          "response": "The biggest in this image is the liver.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "MMedPO": {
+          "response": "The biggest in this image is the lung.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "CaMedPO": {
+          "response": "Lung",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 12,
+      "dataset": "SLAKE",
+      "question": "What modality is used to take this image?",
+      "ground_truth": "CT",
+      "comparison": {
+        "baseline": {
+          "response": "The image is taken using computed tomography (CT), which is a type of medical imaging technique.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "MMedPO": {
+          "response": "The image is taken using computed tomography (CT), which is a type of medical imaging technique.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "CaMedPO": {
+          "response": "CT scan",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 13,
+      "dataset": "SLAKE",
+      "question": "Which part of the body does this image belong to?",
+      "ground_truth": "Chest",
+      "comparison": {
+        "baseline": {
+          "response": "The image belongs to the thoracic region, which is the part of the body between the neck and the abdomen. It includes the chest cavity and its contents, such as the heart, lungs, and other structures.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "The image belongs to the thoracic region, which is the part of the body between the neck and the abdomen.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "CaMedPO": {
+          "response": "Chest",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 14,
+      "dataset": "SLAKE",
+      "question": "What is the main organ in the image?",
+      "ground_truth": "Lung",
+      "comparison": {
+        "baseline": {
+          "response": "The main organ in the image is the esophagus, which is a muscular tube that connects the mouth to the stomach and is responsible for transporting food and liquids.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "MMedPO": {
+          "response": "The main organ in the image is the esophagus, which is a muscular tube that connects the mouth to the stomach and is responsible for transporting food and liquids.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "Lung",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 15,
+      "dataset": "SLAKE",
+      "question": "What is the largest organ in the picture?",
+      "ground_truth": "Lung",
+      "comparison": {
+        "baseline": {
+          "response": "The largest organ in the image is the stomach.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "MMedPO": {
+          "response": "The largest organ in the picture is the liver.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "Lung",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 16,
+      "dataset": "SLAKE",
+      "question": "Does the picture contain liver?",
+      "ground_truth": "No",
+      "comparison": {
+        "baseline": {
+          "response": "No, the image does not contain the liver.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "No, the image does not contain liver.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "CaMedPO": {
+          "response": "No",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 17,
+      "dataset": "SLAKE",
+      "question": "Does the picture contain lung?",
+      "ground_truth": "Yes",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the image is a computed tomography (CT) scan of the chest, which includes the lungs.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        },
+        "CaMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 18,
+      "dataset": "SLAKE",
+      "question": "What diseases are included in the picture?",
+      "ground_truth": "Lung Cancer",
+      "comparison": {
+        "baseline": {
+          "response": "The image includes patients with sarcoidosis and tuberculosis.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "MMedPO": {
+          "response": "The image includes cases of pneumonia and tuberculosis.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "Lung cancer",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 19,
+      "dataset": "SLAKE",
+      "question": "Is the lung healthy?",
+      "ground_truth": "No",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the lung appears to be healthy in the image.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "MMedPO": {
+          "response": "Yes, the lung appears to be healthy in the image.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "No",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 20,
+      "dataset": "SLAKE",
+      "question": "Where is/are the abnormality located?",
+      "ground_truth": "Left Lung, Right",
+      "comparison": {
+        "baseline": {
+          "response": "The abnormality is located in the right lower lobe of the lung.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "The abnormality is located in the right lung.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "Left Lung",
+          "correct": false,
+          "issue": "回答错误"
+        }
+      }
+    },
+    {
+      "case_id": 21,
+      "dataset": "SLAKE",
+      "question": "Which is the biggest in this image,lung,liver or heart?",
+      "ground_truth": "Lung",
+      "comparison": {
+        "baseline": {
+          "response": "The biggest in this image is the liver.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "MMedPO": {
+          "response": "The biggest in this image is the liver.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "Lung",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 22,
+      "dataset": "SLAKE",
+      "question": "What modality is used to take this image?",
+      "ground_truth": "CT",
+      "comparison": {
+        "baseline": {
+          "response": "The image is taken using a computed tomography (CT) scan.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "MMedPO": {
+          "response": "The image is taken using computed tomography (CT), which is a type of medical imaging technique.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "CaMedPO": {
+          "response": "CT scan",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 23,
+      "dataset": "SLAKE",
+      "question": "Which part of the body does this image belong to?",
+      "ground_truth": "Chest",
+      "comparison": {
+        "baseline": {
+          "response": "The image belongs to the thoracic region, which is the part of the body between the neck and the abdomen. It includes the chest cavity and its contents, such as the lungs, heart, and other structures.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "MMedPO": {
+          "response": "The image belongs to the thoracic region, which is the part of the body between the neck and the abdomen. It includes the chest cavity and its contents, such as the lungs, heart, and other structures.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "CaMedPO": {
+          "response": "Chest",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 24,
+      "dataset": "SLAKE",
+      "question": "What is the main organ in the image?",
+      "ground_truth": "Lung",
+      "comparison": {
+        "baseline": {
+          "response": "The main organ in the image is the lung, specifically the right lung.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "The main organ in the image is the lung.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "CaMedPO": {
+          "response": "Lung",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 25,
+      "dataset": "SLAKE",
+      "question": "What is the largest organ in the picture?",
+      "ground_truth": "Lung",
+      "comparison": {
+        "baseline": {
+          "response": "The largest organ in the picture is the lung.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "MMedPO": {
+          "response": "The largest organ in the picture is the lung.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "CaMedPO": {
+          "response": "Lung",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 26,
+      "dataset": "SLAKE",
+      "question": "Does the picture contain liver?",
+      "ground_truth": "No",
+      "comparison": {
+        "baseline": {
+          "response": "No, the image does not contain liver.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "MMedPO": {
+          "response": "No, the image does not contain liver.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "CaMedPO": {
+          "response": "No",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 27,
+      "dataset": "SLAKE",
+      "question": "Does the picture contain lung?",
+      "ground_truth": "Yes",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the image is a computed tomography (CT) scan of the chest, which includes the lungs.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        },
+        "CaMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 28,
+      "dataset": "SLAKE",
+      "question": "Does the picture contain heart?",
+      "ground_truth": "No",
+      "comparison": {
+        "baseline": {
+          "response": "No, the image does not contain the heart.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "MMedPO": {
+          "response": "No, the picture does not contain heart.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "CaMedPO": {
+          "response": "Yes",
+          "correct": false,
+          "issue": "回答错误"
+        }
+      }
+    },
+    {
+      "case_id": 29,
+      "dataset": "SLAKE",
+      "question": "What diseases are included in the picture?",
+      "ground_truth": "Lung Cancer",
+      "comparison": {
+        "baseline": {
+          "response": "The image includes a variety of diseases, such as pneumonia, pulmonary edema, and lung cancer.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "MMedPO": {
+          "response": "The image includes a variety of lung diseases, such as pneumonia, pulmonary edema, and lung cancer.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "CaMedPO": {
+          "response": "Lung cancer",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 30,
+      "dataset": "SLAKE",
+      "question": "Is the lung healthy?",
+      "ground_truth": "No",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the lung appears to be healthy in the image.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "MMedPO": {
+          "response": "Yes, the lung appears to be healthy in the image.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "No",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 31,
+      "dataset": "SLAKE",
+      "question": "Where is/are the abnormality located?",
+      "ground_truth": "Right Lung, Left",
+      "comparison": {
+        "baseline": {
+          "response": "The abnormality is located in the right upper lobe of the lung.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "The abnormality is located in the right lung.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "Right lung",
+          "correct": false,
+          "issue": "回答错误"
+        }
+      }
+    },
+    {
+      "case_id": 32,
+      "dataset": "SLAKE",
+      "question": "What modality is used to take this image?",
+      "ground_truth": "X-Ray",
+      "comparison": {
+        "baseline": {
+          "response": "The image is taken using a chest X-ray modality.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "MMedPO": {
+          "response": "The image is taken using a chest X-ray modality.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "CaMedPO": {
+          "response": "X-Ray",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 33,
+      "dataset": "SLAKE",
+      "question": "Which part of the body does this image belong to?",
+      "ground_truth": "Chest",
+      "comparison": {
+        "baseline": {
+          "response": "The image is a chest X-ray, which is a part of the body that includes the lungs, heart, and surrounding structures.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "The image belongs to the chest area.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "CaMedPO": {
+          "response": "Chest",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 34,
+      "dataset": "SLAKE",
+      "question": "What is the largest organ in the picture?",
+      "ground_truth": "Lung",
+      "comparison": {
+        "baseline": {
+          "response": "The largest organ in the chest X-ray is the heart.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "MMedPO": {
+          "response": "The largest organ in the picture is the heart.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "Lung",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 35,
+      "dataset": "SLAKE",
+      "question": "What diseases are included in the picture?",
+      "ground_truth": "Cardiomegaly",
+      "comparison": {
+        "baseline": {
+          "response": "The chest X-ray image includes patients with pulmonary tuberculosis (TB) and pulmonary sarcoidosis.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "The chest X-ray image includes patients with pneumonia and tuberculosis.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "Pneumonia",
+          "correct": false,
+          "issue": "回答错误"
+        }
+      }
+    },
+    {
+      "case_id": 36,
+      "dataset": "SLAKE",
+      "question": "Where is/are the abnormality located?",
+      "ground_truth": "Center",
+      "comparison": {
+        "baseline": {
+          "response": "The abnormality is located in the right hemithorax, which is the right side of the chest cavity.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "The abnormality is located in the right lung.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "Left Lung",
+          "correct": false,
+          "issue": "回答错误"
+        }
+      }
+    },
+    {
+      "case_id": 37,
+      "dataset": "SLAKE",
+      "question": "Are there abnormalities in this image?",
+      "ground_truth": "Yes",
+      "comparison": {
+        "baseline": {
+          "response": "The chest x-ray appears to be normal, with no abnormalities detected.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes, there are abnormalities in this chest X-ray image.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "CaMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 38,
+      "dataset": "SLAKE",
+      "question": "Which organ is abnormal, heart or lung?",
+      "ground_truth": "Heart",
+      "comparison": {
+        "baseline": {
+          "response": "The chest X-ray shows an abnormal heart, specifically an enlarged heart.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "The chest X-ray shows an abnormal heart.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "CaMedPO": {
+          "response": "Lung",
+          "correct": false,
+          "issue": "回答错误"
+        }
+      }
+    },
+    {
+      "case_id": 39,
+      "dataset": "SLAKE",
+      "question": "What modality is used to take this image?",
+      "ground_truth": "MRI",
+      "comparison": {
+        "baseline": {
+          "response": "The image is taken using magnetic resonance imaging (MRI), which is a non-invasive imaging technique that uses a strong magnetic field and radio waves to create detailed images of the body's internal structures.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "The image is taken using magnetic resonance imaging (MRI).",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "CaMedPO": {
+          "response": "MRI",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 40,
+      "dataset": "SLAKE",
+      "question": "Which part of the body does this image belong to?",
+      "ground_truth": "Abdomen",
+      "comparison": {
+        "baseline": {
+          "response": "The image belongs to the abdomen, specifically focusing on the liver.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "The image belongs to the abdomen.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "CaMedPO": {
+          "response": "Abdomen",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 41,
+      "dataset": "SLAKE",
+      "question": "What is the mr weighting in this image?",
+      "ground_truth": "T2",
+      "comparison": {
+        "baseline": {
+          "response": "The mr weighting in this image is 1.5 Tesla (T).",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "MMedPO": {
+          "response": "The mr weighting in this image is T2-weighted.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "CaMedPO": {
+          "response": "T1",
+          "correct": false,
+          "issue": "回答错误"
+        }
+      }
+    },
+    {
+      "case_id": 42,
+      "dataset": "SLAKE",
+      "question": "Is there any abnormality in the spleen?",
+      "ground_truth": "No",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, there appears to be an abnormality in the spleen. The MRI image shows a splenic mass, which is an unusual growth or lesion within the spleen.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes, there is an abnormality in the spleen. The MRI image shows a splenic mass, which is an abnormal growth or lesion within the spleen.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "No",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 43,
+      "dataset": "SLAKE",
+      "question": "Does the liver look normal?",
+      "ground_truth": "Yes",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the liver appears to be normal in the MRI image.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes, the liver appears to be normal in the MRI image.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "CaMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 44,
+      "dataset": "SLAKE",
+      "question": "Does the picture contain liver?",
+      "ground_truth": "Yes",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the image is an MRI of the liver.",
+          "correct": true,
+          "issue": "过度生成; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes, the image contains liver.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "CaMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 45,
+      "dataset": "SLAKE",
+      "question": "Does the picture contain kidney?",
+      "ground_truth": "No",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the image contains the kidney.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "MMedPO": {
+          "response": "Yes, the image contains the kidney.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "No",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 46,
+      "dataset": "SLAKE",
+      "question": "Does the picture contain spleen?",
+      "ground_truth": "Yes",
+      "comparison": {
+        "baseline": {
+          "response": "Yes, the image contains the spleen.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "MMedPO": {
+          "response": "No, the picture does not contain the spleen.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "CaMedPO": {
+          "response": "No",
+          "correct": false,
+          "issue": "回答错误"
+        }
+      }
+    },
+    {
+      "case_id": 47,
+      "dataset": "SLAKE",
+      "question": "What modality is used to take this image?",
+      "ground_truth": "X-Ray",
+      "comparison": {
+        "baseline": {
+          "response": "The image is taken using a chest X-ray modality.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "MMedPO": {
+          "response": "The image is taken using a chest X-ray modality.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "CaMedPO": {
+          "response": "X-Ray",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 48,
+      "dataset": "SLAKE",
+      "question": "Which part of the body does this image belong to?",
+      "ground_truth": "Chest",
+      "comparison": {
+        "baseline": {
+          "response": "The image belongs to the chest area, specifically a chest X-ray.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "MMedPO": {
+          "response": "The image belongs to the chest, specifically the thoracic region.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "CaMedPO": {
+          "response": "Chest",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 49,
+      "dataset": "SLAKE",
+      "question": "Are there abnormalities in this image?",
+      "ground_truth": "Yes",
+      "comparison": {
+        "baseline": {
+          "response": "The chest x-ray appears to be normal, with no abnormalities detected.",
+          "correct": false,
+          "issue": "回答错误; 过度生成"
+        },
+        "MMedPO": {
+          "response": "Yes, there are abnormalities in this chest X-ray image.",
+          "correct": true,
+          "issue": "过度生成"
+        },
+        "CaMedPO": {
+          "response": "Yes",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    },
+    {
+      "case_id": 50,
+      "dataset": "SLAKE",
+      "question": "What is the largest organ in the picture?",
+      "ground_truth": "Lung",
+      "comparison": {
+        "baseline": {
+          "response": "The largest organ in the chest X-ray is the heart.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "MMedPO": {
+          "response": "The largest organ in the picture is the heart.",
+          "correct": false,
+          "issue": "回答错误"
+        },
+        "CaMedPO": {
+          "response": "Lung",
+          "correct": true,
+          "issue": "无"
+        }
+      }
+    }
+  ]
+}

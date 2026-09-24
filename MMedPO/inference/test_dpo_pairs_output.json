@@ -1,0 +1,36 @@
+[
+  {
+    "id": "test_2",
+    "case_id": "case_001",
+    "question": "What is the diagnosis based on this medical image?",
+    "image": "case_001/case_001.jpg",
+    "chosen": "Pneumonia is visible in the lung with inflammatory changes.",
+    "rejected": "This appears to be a normal chest X-ray with no abnormalities.",
+    "tie_weight": 0.7858349830425586,
+    "normalized_weight": -1.3007615335502267,
+    "anchor_info": {
+      "has_anchor": true,
+      "anchor_answer": "Pneumonia with right lower lobe consolidation and pleural effusion.",
+      "chosen_anchor_similarity": 0.20196065131294502,
+      "rejected_anchor_similarity": 0.1349206349206349
+    },
+    "validation_info": {
+      "preferred_valid": true,
+      "dispreferred_valid": true,
+      "preferred_violations": [],
+      "dispreferred_reasons": [
+        "前景未抑制错误答案: Δ⁻(0.1000) ≥ 0"
+      ],
+      "conversation_valid": true
+    },
+    "metadata": {
+      "tie_positive": 0.7,
+      "tie_negative": 0.3,
+      "delta_pos": 0.5,
+      "delta_neg": 0.2,
+      "m_v": 0.3,
+      "m_n": 0.15,
+      "gamma": 0.15
+    }
+  }
+]
