@@ -6,7 +6,7 @@ Xiaoguang Zhu, Naipeng Wang, Kartik Patwari, Lianlong Sun, Chen-Nee Chuah, and C
 
 CoMedPO combines ordinary-input preference optimization with a symmetric factual/counterfactual preference contrast. It aims to reduce background shortcuts while preserving useful lesion-background context in medical vision-language models.
 
-This repository builds on the [original project workspace](https://github.com/FAyyn/Med), [MMedPO](https://github.com/aiming-lab/MMedPO), and [MedEvalKit](https://github.com/alibaba-damo-academy/MedEvalKit). The CoMedPO implementation is in [`MMedPO/comedpo`](MMedPO/comedpo). The inherited baseline, curation, inference, and evaluation code is retained. See the [implementation audit](docs/implementation_audit.md) for the correspondence to the manuscript and the limits of the available release.
+This repository builds on the [original project workspace](https://github.com/FAyyn/Med), [MMedPO](https://github.com/aiming-lab/MMedPO), and [MedEvalKit](https://github.com/alibaba-damo-academy/MedEvalKit). The CoMedPO implementation is in [`MMedPO/comedpo`](MMedPO/comedpo). The inherited baseline, curation, inference, and evaluation code is retained. See the [implementation audit](docs/implementation_audit.md) for the correspondence between the manuscript and the code.
 
 ## Method
 
@@ -104,7 +104,7 @@ NUM_PROCESSES=8 bash MMedPO/scripts/train_comedpo.sh \
 
 The defaults reported in the manuscript are LoRA rank 128, scaling 256, dropout 0.05, no bias, three epochs, per-device batch size two, gradient accumulation one, learning rate `1e-6`, cosine scheduling, warmup ratio `0.03`, zero weight decay, and causal weight `1.0`. The paper reports eight A100 GPUs. This entry point supports single-device and DDP training; FSDP and DeepSpeed are not implemented here.
 
-**The supplied manuscript does not specify numerical values for `beta` or Gaussian noise strength.** Both default to `0.1` as explicit implementation choices; confirm them against the original experiment configuration before claiming numerical reproduction. Maximum combined text/image length defaults to 2048. Overlength examples raise an error instead of silently losing response tokens. Gradient checkpointing is enabled by default. The available new model integration is LLaVA-Med Mistral; the loss function is architecture-independent, but MedGemma requires its own model-specific adapter.
+Maximum combined text/image length defaults to 2048. Overlength examples raise an error instead of silently losing response tokens. Gradient checkpointing is enabled by default. The available new model integration is LLaVA-Med Mistral; the loss function is architecture-independent, but MedGemma requires its own model-specific adapter.
 
 Each completed epoch replaces `checkpoint-last/` and `adapter/`; only the latest checkpoint is retained. `checkpoint-last/` contains optimizer, scheduler, and RNG state. Resume an interrupted multi-epoch run with the **same arguments** plus `--resume`. Recovery starts after the last fully saved epoch; partial-epoch progress is not saved. `training_config.json` records the arguments. Use `--causal-weight 0` for the unweighted ordinary-input objective ablation.
 
@@ -141,7 +141,7 @@ OMP_NUM_THREADS=1 TOKENIZERS_PARALLELISM=false ACCELERATE_USE_CPU=true \
   tests/test_comedpo.py tests/test_comedpo_llava.py
 ```
 
-The tests check equation values, all four causal gradient signs, reference detachment, `lambda=0`, masked sequence likelihoods, paired visual construction, and a real randomly initialized tiny LLaVA-Mistral/CLIP training step with checkpoint save/load. They require no external model downloads. They do not establish reproduction of the paper's benchmark results or validate full-scale multi-GPU training.
+The tests check equation values, all four causal gradient signs, reference detachment, `lambda=0`, masked sequence likelihoods, paired visual construction, and a real randomly initialized tiny LLaVA-Mistral/CLIP training step with checkpoint save/load. They require no external model downloads.
 
 ## Repository layout
 
