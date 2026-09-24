@@ -1,8 +1,6 @@
 # CoMedPO
 
-**Towards Reliable Medical Large Vision-Language Models via Counterfactual Preference Optimization**
-
-Xiaoguang Zhu, Naipeng Wang, Kartik Patwari, Lianlong Sun, Chen-Nee Chuah, and Chengxin Pang.
+Official code for **Towards Reliable Medical Large Vision-Language Models via Counterfactual Preference Optimization**.
 
 CoMedPO combines ordinary-input preference optimization with a symmetric factual/counterfactual preference contrast. It aims to reduce background shortcuts while preserving useful lesion-background context in medical vision-language models.
 
